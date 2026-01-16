@@ -45,7 +45,7 @@ const TEAMS = [
         "currentMatch": {
             "opponent": "Glare",
             "opponentLogo": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "score": "2-1",
+            "score": "4-2",
             "status": "LIVE",
             "map": "BO1",
             "odds": {
