@@ -1,6 +1,24 @@
 
 const LIVE_MATCHES = [
     {
+        "id": "Glare_vs_Flux",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Glare",
+        "team2": "Flux",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "17-01-2026 01:19",
+        "odds": {
+            "p1": "1.85",
+            "x": "3.50",
+            "p2": "1.85"
+        },
+        "logos": {
+            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
+            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+        }
+    },
+    {
         "id": "Glare_vs_Myst",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Glare",
