@@ -4,101 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Статистика CS2</title>
-
-    <!-- Google Fonts: Inter -->
+    <title>CS2 BERSERK STATS</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <div class="app-container">
+        <!-- Mobile Menu Button -->
+        <button class="mobile-toggle" id="sidebarToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
         <!-- Sidebar Navigation -->
-        <aside class="sidebar">
+        <nav class="sidebar" id="sidebar">
             <div class="logo-area">
-                <i class="fa-solid fa-crosshairs"></i>
-                <span>CS2 СТАТИСТИКА</span>
+                <i class="fa-solid fa-gamepad logo-icon"></i>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text glitch" data-text="STATGAMES">STAT<span class="highlight">GAMES</span></span>
+                </div>
             </div>
 
-            <div class="search-box">
-                <i class="fa-solid fa-search"></i>
-                <input type="text" id="teamSearch" placeholder="Поиск команды...">
-            </div>
+            <ul class="nav-links">
+                <!-- Dashboard is now the main view -->
+                <li class="nav-item active" data-tab="dashboard">
+                    <i class="fa-solid fa-table-list"></i>
+                    <span>Матч-центр</span>
+                </li>
+                <!-- Live is separate or part of dashboard? Let's keep separate for focused view if needed -->
+                <li class="nav-item" data-tab="live">
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                    <span>Только LIVE</span>
+                </li>
+                <li class="nav-item" data-tab="analytics">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Аналитика</span>
+                </li>
+            </ul>
 
-            <nav class="team-list" id="teamList">
-                <!-- Teams will be injected here via JS -->
-                <div class="team-item skeleton"></div>
-                <div class="team-item skeleton"></div>
-            </nav>
-        </aside>
+            <!-- League Selector removed as per user request (17-01-2026) -->
+            <!-- <div class="league-selector">
+                <label>Лига</label>
+                <div class="custom-select" id="sidebar-league-select">
+                    <span id="sidebar-league-current">Все</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="filter-dropdown-menu" id="sidebar-league-dropdown"
+                    style="width: 100%; top: auto; left: auto; position: relative; margin-top: 5px; display: none;">
+                </div>
+            </div> -->
+
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span id="connection-status">Online</span>
+            </div>
+        </nav>
 
         <!-- Main Content Area -->
+        <nav class="overlay" id="overlay"></nav>
+
         <main class="main-content">
+            <!-- Top Header / Filter Bar -->
             <header class="top-bar">
-                <div class="status-indicator">
-                    <span class="dot live"></span>
-                    <span>LIVE ОБНОВЛЕНИЕ</span>
-                </div>
-                <div class="current-time" id="currentTime">--:--</div>
+                <!-- Search removed as per user request (17-01-2026) -->
+                <!-- <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="team-search" placeholder="Поиск команды...">
+                </div> -->
+
+                <div class="clock-display" id="app-clock">--:--</div>
             </header>
 
-            <div class="content-wrapper" id="contentArea">
-                <!-- Hero Match Section -->
-                <div class="match-hero glass-panel">
-                    <div class="team-display left">
-                        <div class="team-logo-large">
-                            <img src="" alt="Team A" id="teamALogo">
-                        </div>
-                        <h2 class="team-name" id="teamAName">Выберите команду</h2>
-                    </div>
-
-                    <div class="match-center">
-                        <div class="match-status" id="matchStatus">--</div>
-                        <div class="score-board" id="scoreBoard">
-                            <span class="score">-</span>
-                            <span class="divider">:</span>
-                            <span class="score">-</span>
-                        </div>
-                        <div class="map-name" id="mapName">--</div>
-                    </div>
-
-                    <div class="team-display right">
-                        <div class="team-logo-large">
-                            <img src="" alt="Team B" id="teamBLogo">
-                        </div>
-                        <h2 class="team-name" id="teamBName">--</h2>
+            <!-- Data View: Dashboard (Combined Table) -->
+            <div id="view-dashboard" class="view-section active">
+                <div class="section-header">
+                    <h2>Матч-центр</h2>
+                    <div class="table-actions">
+                        <button class="icon-btn" title="Фильтр"><i class="fa-solid fa-filter"></i></button>
                     </div>
                 </div>
 
-                <!-- Odds Section -->
-                <div class="odds-grid" id="oddsGrid">
-                    <div class="odd-card glass-panel">
-                        <span class="odd-label">ПОБЕДА 1</span>
-                        <span class="odd-value" id="oddP1">--</span>
-                    </div>
-                    <div class="odd-card glass-panel">
-                        <span class="odd-label">НИЧЬЯ</span>
-                        <span class="odd-value" id="oddDraw">--</span>
-                    </div>
-                    <div class="odd-card glass-panel">
-                        <span class="odd-label">ПОБЕДА 2</span>
-                        <span class="odd-value" id="oddP2">--</span>
-                    </div>
+                <div class="table-wrapper">
+                    <table class="modern-table">
+                        <thead>
+                            <!-- Row 1: Column Titles -->
+                            <tr>
+                                <th width="12%">Дата</th>
+                                <th width="15%">Лига</th>
+                                <th width="20%" style="text-align: right;">Команда 1</th>
+                                <th width="20%" style="text-align: left;">Команда 2</th>
+                                <th width="10%" style="text-align: center;">Счет</th>
+                                <th width="10%" style="text-align: center;">П1</th>
+                                <th width="10%" style="text-align: center;">П2</th>
+                            </tr>
+                            <!-- Row 2: Filter Controls -->
+                            <tr class="filter-row">
+                                <td>
+                                    <button class="filter-trigger full-width" data-col="time">Все <i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </td>
+                                <td>
+                                    <button class="filter-trigger full-width" data-col="league">Все <i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </td>
+                                <td style="text-align: right;">
+                                    <button class="filter-trigger" data-col="team1">Все <i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </td>
+                                <td>
+                                    <button class="filter-trigger" data-col="team2">Все <i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </td>
+                                <td>
+                                    <button class="filter-trigger full-width" data-col="score">Все <i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </td>
+                                <td>
+                                    <button class="filter-trigger full-width" data-col="odds.p1">Все <i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </td>
+                                <td>
+                                    <button class="filter-trigger full-width" data-col="odds.p2">Все <i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody id="dashboard-table-body">
+                            <!-- JS will populate rows here (Live + History) -->
+                        </tbody>
+                    </table>
                 </div>
+            </div>
 
-                <!-- Stats/History Section -->
-                <div class="stats-container glass-panel">
-                    <h3>Последние матчи</h3>
-                    <ul class="match-history" id="matchHistory">
-                        <!-- History items injected here -->
-                    </ul>
+            <!-- Data View: Live Grid (Optional Focused View) -->
+            <div id="view-live" class="view-section">
+                <div class="section-header">
+                    <h2>Только LIVE</h2>
+                </div>
+                <div class="live-grid-container" id="live-container">
+                    <!-- Cards -->
+                </div>
+            </div>
+
+            <!-- Data View: Analytics (Stub) -->
+            <div id="view-analytics" class="view-section">
+                <div class="empty-state">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>Аналитика в разработке</p>
                 </div>
             </div>
         </main>
