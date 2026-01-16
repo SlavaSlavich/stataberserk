@@ -3,17 +3,17 @@ const TEAMS = [
         "id": "glare",
         "name": "Glare",
         "logo": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-        "isLive": true,
+        "isLive": false,
         "currentMatch": {
             "opponent": "Flux",
             "opponentLogo": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "score": "14-16",
-            "status": "LIVE",
+            "score": "0-0",
+            "status": "16.01 23:31",
             "map": "BO1",
             "odds": {
-                "p1": "1.82",
+                "p1": "1.85",
                 "draw": "3.50",
-                "p2": "1.88"
+                "p2": "1.85"
             }
         },
         "history": []
@@ -22,17 +22,17 @@ const TEAMS = [
         "id": "flux",
         "name": "Flux",
         "logo": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-        "isLive": true,
+        "isLive": false,
         "currentMatch": {
             "opponent": "Glare",
             "opponentLogo": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "score": "14-16",
-            "status": "LIVE",
+            "score": "0-0",
+            "status": "16.01 23:31",
             "map": "BO1",
             "odds": {
-                "p1": "1.82",
+                "p1": "1.85",
                 "draw": "3.50",
-                "p2": "1.88"
+                "p2": "1.85"
             }
         },
         "history": []
