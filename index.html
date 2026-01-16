@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика CS2</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i class="fa-solid fa-crosshairs"></i>
+                <span>CS2 СТАТИСТИКА</span>
+            </div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="teamSearch" placeholder="Поиск команды...">
+            </div>
+
+            <nav class="team-list" id="teamList">
+                <!-- Teams will be injected here via JS -->
+                <div class="team-item skeleton"></div>
+                <div class="team-item skeleton"></div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="status-indicator">
+                    <span class="dot live"></span>
+                    <span>LIVE ОБНОВЛЕНИЕ</span>
+                </div>
+                <div class="current-time" id="currentTime">--:--</div>
+            </header>
+
+            <div class="content-wrapper" id="contentArea">
+                <!-- Hero Match Section -->
+                <div class="match-hero glass-panel">
+                    <div class="team-display left">
+                        <div class="team-logo-large">
+                            <img src="" alt="Team A" id="teamALogo">
+                        </div>
+                        <h2 class="team-name" id="teamAName">Выберите команду</h2>
+                    </div>
+
+                    <div class="match-center">
+                        <div class="match-status" id="matchStatus">--</div>
+                        <div class="score-board" id="scoreBoard">
+                            <span class="score">-</span>
+                            <span class="divider">:</span>
+                            <span class="score">-</span>
+                        </div>
+                        <div class="map-name" id="mapName">--</div>
+                    </div>
+
+                    <div class="team-display right">
+                        <div class="team-logo-large">
+                            <img src="" alt="Team B" id="teamBLogo">
+                        </div>
+                        <h2 class="team-name" id="teamBName">--</h2>
+                    </div>
+                </div>
+
+                <!-- Odds Section -->
+                <div class="odds-grid" id="oddsGrid">
+                    <div class="odd-card glass-panel">
+                        <span class="odd-label">ПОБЕДА 1</span>
+                        <span class="odd-value" id="oddP1">--</span>
+                    </div>
+                    <div class="odd-card glass-panel">
+                        <span class="odd-label">НИЧЬЯ</span>
+                        <span class="odd-value" id="oddDraw">--</span>
+                    </div>
+                    <div class="odd-card glass-panel">
+                        <span class="odd-label">ПОБЕДА 2</span>
+                        <span class="odd-value" id="oddP2">--</span>
+                    </div>
+                </div>
+
+                <!-- Stats/History Section -->
+                <div class="stats-container glass-panel">
+                    <h3>Последние матчи</h3>
+                    <ul class="match-history" id="matchHistory">
+                        <!-- History items injected here -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
