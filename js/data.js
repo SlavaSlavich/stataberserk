@@ -41,12 +41,12 @@ const TEAMS = [
         "id": "myst",
         "name": "Myst",
         "logo": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-        "isLive": true,
+        "isLive": false,
         "currentMatch": {
             "opponent": "Glare",
             "opponentLogo": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "score": "13-11",
-            "status": "LIVE",
+            "score": "0-0",
+            "status": "17.01 00:07",
             "map": "BO1",
             "odds": {
                 "p1": "1.9",
