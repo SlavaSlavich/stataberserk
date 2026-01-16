@@ -24,8 +24,8 @@ const LIVE_MATCHES = [
         "team1": "Myst",
         "team2": "Flux",
         "score": "0-0",
-        "status": "Coming Soon",
-        "time": "17-01-2026 01:10",
+        "status": "LIVE",
+        "time": "1-я карта",
         "odds": {
             "p1": "2.0",
             "x": "3.50",
