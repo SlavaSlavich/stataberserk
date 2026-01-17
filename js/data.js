@@ -24,7 +24,7 @@ const LIVE_MATCHES = [
         "team1": "Myst",
         "team2": "Glare",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "17-01-2026 18:54",
         "odds": {
             "p1": "1.85",
@@ -982,44 +982,6 @@ const MATCH_HISTORY = [
             "p1": "1.48",
             "x": "3.50",
             "p2": "2.5"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Raze_1768635893",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Raze",
-        "score": "13-10",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Havoc_1768635216",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "5-13",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.0",
-            "x": "3.50",
-            "p2": "1.72"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
