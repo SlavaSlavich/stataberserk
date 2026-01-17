@@ -46,6 +46,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-6",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.48",
             "x": "3.50",
@@ -64,6 +65,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "12-10",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "2.3",
             "x": "3.50",
@@ -82,6 +84,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-10",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.38",
             "x": "3.50",
@@ -100,6 +103,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-11",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.48",
             "x": "3.50",
@@ -118,6 +122,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "5-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -136,6 +141,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-7",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.38",
             "x": "3.50",
@@ -154,6 +160,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-10",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -172,6 +179,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-7",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -190,6 +198,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "11-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "1.38",
             "x": "3.50",
@@ -208,6 +217,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-7",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -226,6 +236,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "10-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -244,6 +255,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "22-20",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.38",
             "x": "3.50",
@@ -262,6 +274,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "12-8",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -280,6 +293,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "7-12",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -298,6 +312,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "15-12",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.38",
             "x": "3.50",
@@ -316,6 +331,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "6-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -334,6 +350,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "4-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -352,6 +369,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-3",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.38",
             "x": "3.50",
@@ -370,6 +388,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-7",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -388,6 +407,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-9",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -406,6 +426,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-10",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -424,6 +445,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "10-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -442,6 +464,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "11-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.15",
             "x": "3.50",
@@ -460,6 +483,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-8",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -478,6 +502,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-10",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -496,6 +521,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "14-16",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.15",
             "x": "3.50",
@@ -514,6 +540,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-10",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -532,6 +559,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-6",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -550,6 +578,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "12-9",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -568,6 +597,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-5",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -586,6 +616,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-6",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -604,6 +635,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "7-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -622,6 +654,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-4",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -640,6 +673,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "15-18",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "1.5",
             "x": "3.50",
@@ -658,6 +692,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-11",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -676,6 +711,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-6",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -694,6 +730,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "12-11",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -712,6 +749,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "9-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -730,6 +768,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "8-12",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -748,6 +787,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "16-19",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -766,6 +806,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-11",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -784,6 +825,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-6",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -802,6 +844,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-8",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -820,6 +863,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-9",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "2.2",
             "x": "3.50",
@@ -838,6 +882,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "13-7",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.4",
             "x": "3.50",
@@ -856,6 +901,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "13-11",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.55",
             "x": "3.50",
@@ -874,6 +920,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "10-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "2.15",
             "x": "3.50",
@@ -892,6 +939,7 @@ const MATCH_HISTORY = [
         "team2": "Evoker",
         "score": "16-13",
         "winner": "team1",
+        "map_num": null,
         "odds": {
             "p1": "1.42",
             "x": "3.50",
@@ -910,6 +958,7 @@ const MATCH_HISTORY = [
         "team2": "Zenith",
         "score": "11-13",
         "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "1.55",
             "x": "3.50",
@@ -928,60 +977,7 @@ const MATCH_HISTORY = [
         "team2": "Flux",
         "score": "13-6",
         "winner": "team1",
-        "odds": {
-            "p1": "1.85",
-            "x": "3.50",
-            "p2": "1.85"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Myst_vs_Flux_1768603374",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Myst",
-        "team2": "Flux",
-        "score": "5-13",
-        "winner": "team2",
-        "odds": {
-            "p1": "1.95",
-            "x": "3.50",
-            "p2": "1.75"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Glare_vs_Myst_1768602877",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Glare",
-        "team2": "Myst",
-        "score": "11-12",
-        "winner": "team2",
-        "odds": {
-            "p1": "1.88",
-            "x": "3.50",
-            "p2": "1.82"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Glare_vs_Flux_1768602264",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Glare",
-        "team2": "Flux",
-        "score": "5-13",
-        "winner": "team2",
+        "map_num": null,
         "odds": {
             "p1": "1.85",
             "x": "3.50",
