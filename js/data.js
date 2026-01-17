@@ -14,8 +14,8 @@ const LIVE_MATCHES = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -32,8 +32,8 @@ const LIVE_MATCHES = [
             "p2": "2.7"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     }
 ];
@@ -53,8 +53,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -72,8 +72,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -91,8 +91,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -110,8 +110,8 @@ const MATCH_HISTORY = [
             "p2": "1.65"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -129,8 +129,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -148,8 +148,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -167,8 +167,8 @@ const MATCH_HISTORY = [
             "p2": "1.65"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -186,8 +186,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -205,8 +205,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -224,8 +224,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -243,8 +243,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -262,8 +262,8 @@ const MATCH_HISTORY = [
             "p2": "2.7"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -281,8 +281,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -300,8 +300,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -319,8 +319,8 @@ const MATCH_HISTORY = [
             "p2": "2.7"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -338,8 +338,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -357,8 +357,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -376,8 +376,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -395,8 +395,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -414,8 +414,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -433,8 +433,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -452,8 +452,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -471,8 +471,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -490,8 +490,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -509,8 +509,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -528,8 +528,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -547,8 +547,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -566,8 +566,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -585,8 +585,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -604,8 +604,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -623,8 +623,8 @@ const MATCH_HISTORY = [
             "p2": "1.65"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -642,8 +642,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -661,8 +661,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -680,8 +680,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -699,8 +699,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -718,8 +718,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -737,8 +737,8 @@ const MATCH_HISTORY = [
             "p2": "1.72"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -756,8 +756,8 @@ const MATCH_HISTORY = [
             "p2": "1.72"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -775,8 +775,8 @@ const MATCH_HISTORY = [
             "p2": "2.4"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -794,8 +794,8 @@ const MATCH_HISTORY = [
             "p2": "1.72"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -813,8 +813,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -832,8 +832,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -851,8 +851,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -870,8 +870,8 @@ const MATCH_HISTORY = [
             "p2": "1.72"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -889,8 +889,8 @@ const MATCH_HISTORY = [
             "p2": "2.4"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -908,8 +908,8 @@ const MATCH_HISTORY = [
             "p2": "1.65"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -927,8 +927,8 @@ const MATCH_HISTORY = [
             "p2": "1.65"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -946,8 +946,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -965,8 +965,8 @@ const MATCH_HISTORY = [
             "p2": "1.55"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     },
     {
@@ -984,27 +984,8 @@ const MATCH_HISTORY = [
             "p2": "2.8"
         },
         "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Zenith_1768631175",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Zenith",
-        "score": "13-11",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.48",
-            "x": "3.50",
-            "p2": "2.5"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.png",
-            "t2": "img/cs2_logo.png"
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
         }
     }
 ];
