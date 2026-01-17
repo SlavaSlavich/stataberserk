@@ -1,24 +1,6 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Phantom_vs_Zenith",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Zenith",
-        "score": "13-6",
-        "status": "LIVE",
-        "time": "1-я карта",
-        "odds": {
-            "p1": "1.48",
-            "x": "3.50",
-            "p2": "2.5"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
         "id": "Jagger_vs_Havoc",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Jagger",
@@ -56,6 +38,24 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Phantom_vs_Zenith_1768632730",
+        "time": "1-я карта",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Phantom",
+        "team2": "Zenith",
+        "score": "13-6",
+        "winner": "team1",
+        "odds": {
+            "p1": "1.48",
+            "x": "3.50",
+            "p2": "2.5"
+        },
+        "logos": {
+            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
+            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+        }
+    },
     {
         "id": "Evoker_vs_Zenith_1768632223",
         "time": "1-я карта",
