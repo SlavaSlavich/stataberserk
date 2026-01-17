@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+    <defs>
+        <!-- Intense Neon Gradient -->
+        <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff9d00;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#ff5e00;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+        </linearGradient>
+        <!-- Glow Effect -->
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+    </defs>
+
+    <!-- Shield Outline -->
+    <path d="M256 40 L400 90 V220 C400 330 256 450 256 450 C256 450 112 330 112 220 V90 L256 40 Z" 
+          stroke="url(#neonGradient)" stroke-width="12" fill="none" filter="url(#glow)" stroke-linejoin="round"/>
+
+    <!-- Crossed Weapons Group -->
+    <g transform="translate(256, 256) scale(0.8)">
+        
+        <!-- Rifle (M4 Silhouette) - Diagonal -->
+        <g transform="rotate(45)">
+            <path d="M-140 -15 L100 -15 L100 -35 L120 -35 L120 15 L100 15 L100 0 L-60 0 L-60 30 L-100 30 L-120 50 L-140 50 Z" 
+                  fill="#ddd" stroke="#111" stroke-width="2"/>
+            <!-- Rifle Details -->
+            <rect x="-50" y="-10" width="80" height="8" fill="#333"/>
+        </g>
+
+        <!-- Knife (Karambit/Bayonet Style) - Diagonal Opposite -->
+        <g transform="rotate(-45)">
+            <!-- Blade -->
+            <path d="M-20 -100 C-20 -100 20 -80 20 20 L20 80 L-20 80 L-20 20 C-20 20 -30 -60 -20 -100 Z" 
+                  fill="url(#neonGradient)" />
+            <!-- Handle -->
+            <rect x="-25" y="80" width="50" height="70" rx="5" fill="#333" stroke="url(#neonGradient)" stroke-width="2"/>
+        </g>
+    </g>
+</svg>
