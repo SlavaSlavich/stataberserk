@@ -1,43 +1,195 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Jagger_vs_Raze",
+        "id": "Jagger_vs_Havoc",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Jagger",
-        "team2": "Raze",
-        "score": "9-8",
+        "team2": "Havoc",
+        "score": "6-4",
         "status": "LIVE",
-        "time": "17-01-2026 16:07",
+        "time": "17-01-2026 17:19",
         "odds": {
             "p1": "2.05",
             "x": "3.50",
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
-        "id": "Raze_vs_Havoc",
+        "id": "Jagger_vs_Raze",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Raze",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "17-01-2026 17:28",
+        "odds": {
+            "p1": "2.05",
+            "x": "3.50",
+            "p2": "1.68"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    }
+];
+const MATCH_HISTORY = [
+    {
+        "id": "Raze_vs_Havoc_1768659396",
+        "time": "17-01-2026 17:10",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Raze",
         "team2": "Havoc",
-        "score": "0-0",
-        "status": "Coming Soon",
-        "time": "17-01-2026 16:16",
+        "score": "13-8",
+        "winner": "team1",
+        "map_num": 1,
         "odds": {
             "p1": "1.48",
             "x": "3.50",
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
+    {
+        "id": "Jagger_vs_Raze_1768658978",
+        "time": "17-01-2026 17:01",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Raze",
+        "score": "13-11",
+        "winner": "team1",
+        "map_num": 1,
+        "odds": {
+            "p1": "2.1",
+            "x": "3.50",
+            "p2": "1.65"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    },
+    {
+        "id": "Jagger_vs_Havoc_1768658373",
+        "time": "17-01-2026 16:52",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Havoc",
+        "score": "9-13",
+        "winner": "team2",
+        "map_num": 1,
+        "odds": {
+            "p1": "2.05",
+            "x": "3.50",
+            "p2": "1.68"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    },
+    {
+        "id": "Raze_vs_Havoc_1768657811",
+        "time": "17-01-2026 16:43",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Raze",
+        "team2": "Havoc",
+        "score": "12-9",
+        "winner": "team1",
+        "map_num": 1,
+        "odds": {
+            "p1": "1.48",
+            "x": "3.50",
+            "p2": "2.5"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    },
+    {
+        "id": "Jagger_vs_Raze_1768657275",
+        "time": "17-01-2026 16:34",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Raze",
+        "score": "13-11",
+        "winner": "team1",
+        "map_num": 1,
+        "odds": {
+            "p1": "2.1",
+            "x": "3.50",
+            "p2": "1.65"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    },
+    {
+        "id": "Jagger_vs_Havoc_1768656759",
+        "time": "17-01-2026 16:25",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Havoc",
+        "score": "13-10",
+        "winner": "team1",
+        "map_num": 1,
+        "odds": {
+            "p1": "2.05",
+            "x": "3.50",
+            "p2": "1.68"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    },
+    {
+        "id": "Raze_vs_Havoc_1768656227",
+        "time": "17-01-2026 16:16",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Raze",
+        "team2": "Havoc",
+        "score": "10-13",
+        "winner": "team2",
+        "map_num": 1,
+        "odds": {
+            "p1": "1.48",
+            "x": "3.50",
+            "p2": "2.5"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    },
+    {
+        "id": "Jagger_vs_Raze_1768655739",
+        "time": "17-01-2026 16:07",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Raze",
+        "score": "13-16",
+        "winner": "team2",
+        "map_num": 1,
+        "odds": {
+            "p1": "2.05",
+            "x": "3.50",
+            "p2": "1.68"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    },
     {
         "id": "Jagger_vs_Havoc_1768655154",
         "time": "17-01-2026 15:58",
@@ -53,8 +205,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -72,8 +224,8 @@ const MATCH_HISTORY = [
             "p2": "2.7"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -91,8 +243,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -110,8 +262,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -129,8 +281,8 @@ const MATCH_HISTORY = [
             "p2": "2.7"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -148,8 +300,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -167,8 +319,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -186,8 +338,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -205,8 +357,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -224,8 +376,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -243,8 +395,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -262,8 +414,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -281,8 +433,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -300,8 +452,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -319,8 +471,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -338,8 +490,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -357,8 +509,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -376,8 +528,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -395,8 +547,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -414,8 +566,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -433,8 +585,8 @@ const MATCH_HISTORY = [
             "p2": "1.65"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -452,8 +604,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -471,8 +623,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -490,8 +642,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -509,8 +661,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -528,8 +680,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -547,8 +699,8 @@ const MATCH_HISTORY = [
             "p2": "1.72"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -566,8 +718,8 @@ const MATCH_HISTORY = [
             "p2": "1.72"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -585,8 +737,8 @@ const MATCH_HISTORY = [
             "p2": "2.4"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -604,8 +756,8 @@ const MATCH_HISTORY = [
             "p2": "1.72"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -623,8 +775,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -642,8 +794,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -661,8 +813,8 @@ const MATCH_HISTORY = [
             "p2": "1.68"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -680,8 +832,8 @@ const MATCH_HISTORY = [
             "p2": "1.72"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -699,8 +851,8 @@ const MATCH_HISTORY = [
             "p2": "2.4"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -718,8 +870,8 @@ const MATCH_HISTORY = [
             "p2": "1.65"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -737,8 +889,8 @@ const MATCH_HISTORY = [
             "p2": "1.65"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -756,8 +908,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -775,8 +927,8 @@ const MATCH_HISTORY = [
             "p2": "1.55"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -794,8 +946,8 @@ const MATCH_HISTORY = [
             "p2": "2.8"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -813,8 +965,8 @@ const MATCH_HISTORY = [
             "p2": "2.5"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     },
     {
@@ -832,236 +984,8 @@ const MATCH_HISTORY = [
             "p2": "1.58"
         },
         "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Evoker_1768630056",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Evoker",
-        "score": "13-7",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.38",
-            "x": "3.50",
-            "p2": "2.8"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Zenith_1768629571",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Zenith",
-        "score": "13-10",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.5",
-            "x": "3.50",
-            "p2": "2.4"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Evoker_vs_Zenith_1768629021",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Evoker",
-        "team2": "Zenith",
-        "score": "13-7",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "2.2",
-            "x": "3.50",
-            "p2": "1.58"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Evoker_1768628482",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Evoker",
-        "score": "11-13",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "1.38",
-            "x": "3.50",
-            "p2": "2.8"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Zenith_1768627920",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Zenith",
-        "score": "13-7",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.52",
-            "x": "3.50",
-            "p2": "2.35"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Evoker_vs_Zenith_1768627536",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Evoker",
-        "team2": "Zenith",
-        "score": "10-13",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "2.2",
-            "x": "3.50",
-            "p2": "1.58"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Evoker_1768627149",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Evoker",
-        "score": "22-20",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.38",
-            "x": "3.50",
-            "p2": "2.8"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Zenith_1768626256",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Zenith",
-        "score": "12-8",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.5",
-            "x": "3.50",
-            "p2": "2.4"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Evoker_vs_Zenith_1768625705",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Evoker",
-        "team2": "Zenith",
-        "score": "7-12",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "2.2",
-            "x": "3.50",
-            "p2": "1.58"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Evoker_1768625283",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Evoker",
-        "score": "15-12",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.38",
-            "x": "3.50",
-            "p2": "2.8"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Phantom_vs_Zenith_1768624720",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Phantom",
-        "team2": "Zenith",
-        "score": "6-13",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "1.5",
-            "x": "3.50",
-            "p2": "2.4"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
-        }
-    },
-    {
-        "id": "Evoker_vs_Zenith_1768623064",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Evoker",
-        "team2": "Zenith",
-        "score": "4-13",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "2.2",
-            "x": "3.50",
-            "p2": "1.58"
-        },
-        "logos": {
-            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
-            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
         }
     }
 ];
