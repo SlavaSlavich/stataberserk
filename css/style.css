@@ -515,6 +515,7 @@ body {
     object-fit: contain;
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.05));
     transition: transform 0.3s;
+    border-radius: 50%;
 }
 
 .live-card:hover .team-logo {
@@ -689,6 +690,7 @@ body {
     width: 20px;
     height: 20px;
     object-fit: contain;
+    border-radius: 50%;
 }
 
 /* Empty state */
