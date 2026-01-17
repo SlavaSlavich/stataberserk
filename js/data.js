@@ -35,6 +35,24 @@ const LIVE_MATCHES = [
             "t1": "img/t_logo.png",
             "t2": "img/ct_logo.png"
         }
+    },
+    {
+        "id": "Raze_vs_Havoc",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Raze",
+        "team2": "Havoc",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "17-01-2026 17:37",
+        "odds": {
+            "p1": "1.4",
+            "x": "3.50",
+            "p2": "2.7"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
     }
 ];
 const MATCH_HISTORY = [
