@@ -35,6 +35,24 @@ const LIVE_MATCHES = [
             "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
             "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
         }
+    },
+    {
+        "id": "Jagger_vs_Raze",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Raze",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "17-01-2026 10:09",
+        "odds": {
+            "p1": "2.0",
+            "x": "3.50",
+            "p2": "1.72"
+        },
+        "logos": {
+            "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
+            "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+        }
     }
 ];
 const MATCH_HISTORY = [
