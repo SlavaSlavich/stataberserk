@@ -1,24 +1,6 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Jagger_vs_Havoc",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "11-13",
-        "status": "LIVE",
-        "time": "17-01-2026 17:19",
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/t_logo.png",
-            "t2": "img/ct_logo.png"
-        }
-    },
-    {
         "id": "Jagger_vs_Raze",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Jagger",
@@ -56,6 +38,25 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Jagger_vs_Havoc_1768660019",
+        "time": "17-01-2026 17:19",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Havoc",
+        "score": "11-13",
+        "winner": "team2",
+        "map_num": 1,
+        "odds": {
+            "p1": "2.05",
+            "x": "3.50",
+            "p2": "1.68"
+        },
+        "logos": {
+            "t1": "img/t_logo.png",
+            "t2": "img/ct_logo.png"
+        }
+    },
     {
         "id": "Raze_vs_Havoc_1768659396",
         "time": "17-01-2026 17:10",
