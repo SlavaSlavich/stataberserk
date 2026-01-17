@@ -19,24 +19,6 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "Myst_vs_Glare",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Myst",
-        "team2": "Glare",
-        "score": "12-15",
-        "status": "LIVE",
-        "time": "18-01-2026 00:25",
-        "odds": {
-            "p1": "1.72",
-            "x": "3.50",
-            "p2": "2.0"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Flux_vs_Glare",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
@@ -56,6 +38,25 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Myst_vs_Glare_1768685622",
+        "time": "18-01-2026 00:25",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Myst",
+        "team2": "Glare",
+        "score": "12-15",
+        "winner": "team2",
+        "map_num": 1,
+        "odds": {
+            "p1": "1.72",
+            "x": "3.50",
+            "p2": "2.0"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Flux_vs_Glare_1768684914",
         "time": "18-01-2026 00:16",
