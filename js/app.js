@@ -437,7 +437,7 @@ function renderDashboard(data = null) {
     if (safeHistory.length === 0) {
         tbody.innerHTML = `
             <tr>
-                <td colspan="7">
+                <td colspan="10">
                     <div class="empty-state">
                         <img src="img/empty-state-final.png?v=8" alt="No Data">
                         <p>История пуста</p>
@@ -460,7 +460,24 @@ function renderDashboard(data = null) {
         const logo1 = match.logos ? match.logos.t1 : '';
         const logo2 = match.logos ? match.logos.t2 : '';
 
-        // 7 Columns: Date | League | Team1 | Team2 | Score | P1 | P2
+        // Determine where to put the score based on map_num
+        const mapNum = match.map_num || 0;
+        let scoreCol1 = '-', scoreCol2 = '-', scoreCol3 = '-', mainScore = match.score;
+
+        // If we have a specific map number, show score ONLY in that column
+        // And maybe clear the main "Score" column? 
+        // User asked: "after P2 as new tabs... Map 1, Map 2..."
+        // Typically site shows: T1 vs T2 | Score (Total) | Map 1 | Map 2...
+        // But for BO1, Total Score IS Map 1 Score.
+        // Let's duplicate it for clarity or move it?
+        // If I move it, main score column will be empty?
+        // Let's keep Main Score as is, and ALSO fill the map column.
+
+        if (mapNum === 1) scoreCol1 = match.score;
+        if (mapNum === 2) scoreCol2 = match.score;
+        if (mapNum === 3) scoreCol3 = match.score;
+
+        // 7 Columns: Date | League | Team1 | Team2 | Score | P1 | P2 | Map1 | Map2 | Map3
         row.innerHTML = `
             <td>${match.time}</td>
             <td style="color:var(--text-muted); font-size:12px;">${match.league}</td>
@@ -481,7 +498,7 @@ function renderDashboard(data = null) {
                 </div>
             </td>
             
-            <!-- Score -->
+            <!-- Score (Main) -->
             <td style="text-align: center; font-weight: 700; font-size: 16px;">
                 ${match.score}
             </td>
@@ -495,6 +512,11 @@ function renderDashboard(data = null) {
             <td style="text-align: center;">
                 <span class="odd-box" style="padding:4px 8px; display:inline-block;">${match.odds.p2 || '-'}</span>
             </td>
+
+            <!-- Map Columns -->
+            <td style="text-align: center;">${scoreCol1}</td>
+            <td style="text-align: center;">${scoreCol2}</td>
+            <td style="text-align: center;">${scoreCol3}</td>
         `;
 
         tbody.appendChild(row);
