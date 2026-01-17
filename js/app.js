@@ -496,9 +496,30 @@ function renderDashboard(data = null) {
         if (mapNum === 2) scoreCol2 = match.score;
         if (mapNum === 3) scoreCol3 = match.score;
 
+        // --- SMART DATE FIX ---
+        // If match.time contains "карта" or "Map", it's corrupted. Recover from ID.
+        let displayTime = match.time;
+        const isDirtyTime = /карта|Map|Live/i.test(displayTime);
+
+        if (isDirtyTime || !displayTime) {
+            // Try to extract timestamp from ID: "Team1_vs_Team2_1768..."
+            const parts = match.id.split('_');
+            const possibleTs = parts[parts.length - 1];
+
+            if (possibleTs && /^\d+$/.test(possibleTs)) {
+                const dateObj = new Date(parseInt(possibleTs) * 1000);
+                const day = String(dateObj.getDate()).padStart(2, '0');
+                const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+                const year = dateObj.getFullYear();
+                const hours = String(dateObj.getHours()).padStart(2, '0');
+                const mins = String(dateObj.getMinutes()).padStart(2, '0');
+                displayTime = `${day}-${month}-${year} ${hours}:${mins}`;
+            }
+        }
+
         // 7 Columns: Date | League | Team1 | Team2 | Score | P1 | P2 | Map1 | Map2 | Map3
         row.innerHTML = `
-            <td>${match.time}</td>
+            <td>${displayTime}</td>
             <td style="color:var(--text-muted); font-size:12px;">${match.league}</td>
             
             <!-- Team 1 -->
