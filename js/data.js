@@ -6,8 +6,8 @@ const LIVE_MATCHES = [
         "team1": "Jagger",
         "team2": "Havoc",
         "score": "0-0",
-        "status": "Coming Soon",
-        "time": "17-01-2026 13:53",
+        "status": "LIVE",
+        "time": "1-я карта",
         "odds": {
             "p1": "2.05",
             "x": "3.50",
@@ -35,15 +35,18 @@ const LIVE_MATCHES = [
             "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
             "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
         }
-    },
+    }
+];
+const MATCH_HISTORY = [
     {
-        "id": "Raze_vs_Havoc",
+        "id": "Raze_vs_Havoc_1768647157",
+        "time": "1-я карта",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Raze",
         "team2": "Havoc",
         "score": "13-16",
-        "status": "LIVE",
-        "time": "1-я карта",
+        "winner": "team2",
+        "map_num": 1,
         "odds": {
             "p1": "1.48",
             "x": "3.50",
@@ -53,9 +56,7 @@ const LIVE_MATCHES = [
             "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
             "t2": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Jagger_vs_Raze_1768646542",
         "time": "1-я карта",
