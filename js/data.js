@@ -6,8 +6,8 @@ const LIVE_MATCHES = [
         "team1": "Jagger",
         "team2": "Raze",
         "score": "0-0",
-        "status": "Coming Soon",
-        "time": "17-01-2026 10:36",
+        "status": "LIVE",
+        "time": "1-я карта",
         "odds": {
             "p1": "2.05",
             "x": "3.50",
