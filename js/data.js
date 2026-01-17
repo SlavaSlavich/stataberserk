@@ -45,9 +45,9 @@ const LIVE_MATCHES = [
         "status": "Coming Soon",
         "time": "17-01-2026 15:05",
         "odds": {
-            "p1": "1.48",
+            "p1": "1.42",
             "x": "3.50",
-            "p2": "2.5"
+            "p2": "2.7"
         },
         "logos": {
             "t1": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
