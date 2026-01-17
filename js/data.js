@@ -24,8 +24,8 @@ const LIVE_MATCHES = [
         "team1": "Evoker",
         "team2": "Zenith",
         "score": "0-0",
-        "status": "Coming Soon",
-        "time": "17-01-2026 09:37",
+        "status": "LIVE",
+        "time": "1-я карта",
         "odds": {
             "p1": "2.3",
             "x": "3.50",
