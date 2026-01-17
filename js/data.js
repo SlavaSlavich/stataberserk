@@ -1,6 +1,24 @@
 
 const LIVE_MATCHES = [
     {
+        "id": "Jagger_vs_Havoc",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Jagger",
+        "team2": "Havoc",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "17-01-2026 17:46",
+        "odds": {
+            "p1": "2.05",
+            "x": "3.50",
+            "p2": "1.68"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.png",
+            "t2": "img/cs2_logo.png"
+        }
+    },
+    {
         "id": "Jagger_vs_Raze",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Jagger",
