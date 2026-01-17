@@ -1,5 +1,42 @@
 
-const LIVE_MATCHES = [];
+const LIVE_MATCHES = [
+    {
+        "id": "Zenith_vs_Phantom",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Zenith",
+        "team2": "Phantom",
+        "score": "2-4",
+        "status": "LIVE",
+        "time": "1-я карта",
+        "odds": {
+            "p1": "3.8",
+            "x": "3.50",
+            "p2": "1.22"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Evoker_vs_Phantom",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Evoker",
+        "team2": "Phantom",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "18-01-2026 02:54",
+        "odds": {
+            "p1": "2.8",
+            "x": "3.50",
+            "p2": "1.38"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    }
+];
 const MATCH_HISTORY = [
     {
         "id": "Flux_vs_Glare_1768689371",
@@ -945,424 +982,6 @@ const MATCH_HISTORY = [
             "p1": "2.05",
             "x": "3.50",
             "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc_1768661037",
-        "time": "17-01-2026 17:37",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "12-10",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "1.4",
-            "x": "3.50",
-            "p2": "2.7"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Raze_1768660472",
-        "time": "17-01-2026 17:28",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Raze",
-        "score": "12-7",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Havoc_1768660019",
-        "time": "17-01-2026 17:19",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "11-13",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc_1768659396",
-        "time": "17-01-2026 17:10",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "13-8",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "1.48",
-            "x": "3.50",
-            "p2": "2.5"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Raze_1768658978",
-        "time": "17-01-2026 17:01",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Raze",
-        "score": "13-11",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.1",
-            "x": "3.50",
-            "p2": "1.65"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Havoc_1768658373",
-        "time": "17-01-2026 16:52",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "9-13",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc_1768657811",
-        "time": "17-01-2026 16:43",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "12-9",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "1.48",
-            "x": "3.50",
-            "p2": "2.5"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Raze_1768657275",
-        "time": "17-01-2026 16:34",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Raze",
-        "score": "13-11",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.1",
-            "x": "3.50",
-            "p2": "1.65"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Havoc_1768656759",
-        "time": "17-01-2026 16:25",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "13-10",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc_1768656227",
-        "time": "17-01-2026 16:16",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "10-13",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "1.48",
-            "x": "3.50",
-            "p2": "2.5"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Raze_1768655739",
-        "time": "17-01-2026 16:07",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Raze",
-        "score": "13-16",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Havoc_1768655154",
-        "time": "17-01-2026 15:58",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "13-9",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc_1768654696",
-        "time": "17-01-2026 15:49",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "16-13",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "1.42",
-            "x": "3.50",
-            "p2": "2.7"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Raze_1768653986",
-        "time": "17-01-2026 15:40",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Raze",
-        "score": "5-12",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Havoc_1768653605",
-        "time": "17-01-2026 15:31",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "16-14",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc_1768651913",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "9-12",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "1.42",
-            "x": "3.50",
-            "p2": "2.7"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Raze_1768651397",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Raze",
-        "score": "12-8",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Havoc_1768650891",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "10-13",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc_1768650378",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "13-11",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "1.48",
-            "x": "3.50",
-            "p2": "2.5"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Raze_1768649829",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Raze",
-        "score": "15-12",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Jagger_vs_Havoc_1768649207",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Jagger",
-        "team2": "Havoc",
-        "score": "13-9",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.05",
-            "x": "3.50",
-            "p2": "1.68"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc_1768648653",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "13-6",
-        "winner": "team1",
-        "map_num": 1,
-        "odds": {
-            "p1": "1.48",
-            "x": "3.50",
-            "p2": "2.5"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
