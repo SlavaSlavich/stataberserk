@@ -424,17 +424,31 @@ function applyFilters() {
     });
 }
 
+
+/* --- PAGINATION STATE --- */
+let currentPage = 1;
+const ITEMS_PER_PAGE = 15;
+let allFilteredMatches = []; // Store filtered results here
+
+/* --- RENDER DASHBOARD (History Only) --- */
 /* --- RENDER DASHBOARD (History Only) --- */
 function renderDashboard(data = null) {
     const tbody = document.getElementById('dashboard-table-body');
+    const loadMoreBtn = document.getElementById('load-more-btn');
     if (!tbody) return;
-
-    tbody.innerHTML = '';
 
     // Use passed data or default global history
     const safeHistory = data || ((typeof MATCH_HISTORY !== 'undefined') ? MATCH_HISTORY : []);
 
-    if (safeHistory.length === 0) {
+    // Reset if it's a new dataset call (not a "Load More" action)
+    if (data !== 'APPEND') {
+        currentPage = 1;
+        allFilteredMatches = safeHistory;
+        tbody.innerHTML = ''; // Clear table
+    }
+
+    // Hide empty state if we have data
+    if (allFilteredMatches.length === 0) {
         tbody.innerHTML = `
             <tr>
                 <td colspan="10">
@@ -445,10 +459,24 @@ function renderDashboard(data = null) {
                 </td>
             </tr>
         `;
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
         return;
     }
 
-    safeHistory.forEach(match => {
+    // Calculate Slice
+    let startIndex = 0;
+    let endIndex = currentPage * ITEMS_PER_PAGE;
+
+    if (data === 'APPEND') {
+        startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    } else {
+        startIndex = 0;
+    }
+
+    // Slice data
+    const matchesToRender = allFilteredMatches.slice(startIndex, endIndex);
+
+    matchesToRender.forEach(match => {
         const row = document.createElement('tr');
 
         let t1Class = '';
@@ -463,15 +491,6 @@ function renderDashboard(data = null) {
         // Determine where to put the score based on map_num
         const mapNum = match.map_num || 0;
         let scoreCol1 = '-', scoreCol2 = '-', scoreCol3 = '-', mainScore = match.score;
-
-        // If we have a specific map number, show score ONLY in that column
-        // And maybe clear the main "Score" column? 
-        // User asked: "after P2 as new tabs... Map 1, Map 2..."
-        // Typically site shows: T1 vs T2 | Score (Total) | Map 1 | Map 2...
-        // But for BO1, Total Score IS Map 1 Score.
-        // Let's duplicate it for clarity or move it?
-        // If I move it, main score column will be empty?
-        // Let's keep Main Score as is, and ALSO fill the map column.
 
         if (mapNum === 1) scoreCol1 = match.score;
         if (mapNum === 2) scoreCol2 = match.score;
@@ -521,6 +540,19 @@ function renderDashboard(data = null) {
 
         tbody.appendChild(row);
     });
+
+    // Handle "Load More" Button Visibility
+    if (loadMoreBtn) {
+        if (endIndex < allFilteredMatches.length) {
+            loadMoreBtn.style.display = 'inline-block';
+            loadMoreBtn.onclick = () => {
+                currentPage++;
+                renderDashboard('APPEND');
+            };
+        } else {
+            loadMoreBtn.style.display = 'none';
+        }
+    }
 }
 
 /* --- RENDER LIVE CARD VIEW --- */
