@@ -427,7 +427,7 @@ function applyFilters() {
 
 /* --- PAGINATION STATE --- */
 let currentPage = 1;
-const ITEMS_PER_PAGE = 15;
+const ITEMS_PER_PAGE = 10;
 let allFilteredMatches = []; // Store filtered results here
 
 /* --- RENDER DASHBOARD (History Only) --- */
