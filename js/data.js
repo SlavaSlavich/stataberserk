@@ -1,5 +1,24 @@
 
-const LIVE_MATCHES = [];
+const LIVE_MATCHES = [
+    {
+        "id": "Flux_vs_Lancer",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Flux",
+        "team2": "Lancer",
+        "score": "0-0",
+        "status": "LIVE",
+        "time": "1-я карта",
+        "odds": {
+            "p1": "2.3",
+            "x": "3.50",
+            "p2": "1.55"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    }
+];
 const MATCH_HISTORY = [
     {
         "id": "Ignis_vs_Havoc_1768775639",
