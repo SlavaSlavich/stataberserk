@@ -617,18 +617,56 @@ function renderDashboard(data = null) {
 }
 
 /* --- RENDER LIVE CARD VIEW --- */
+/* --- TWITCH EMBED LOGIC --- */
+function setupTwitchPlayer() {
+    const select = document.getElementById('twitch-channel-select');
+    const container = document.getElementById('twitch-player-wrapper');
+
+    if (!select || !container) return; // Not on this page or elements missing
+
+    // Initial render
+    updatePlayer(select.value);
+
+    // Change listener
+    select.addEventListener('change', (e) => {
+        updatePlayer(e.target.value);
+    });
+
+    function updatePlayer(channel) {
+        // Clear previous
+        container.innerHTML = '';
+
+        if (!channel) return;
+
+        // Construct Iframe
+        // Parent domain required for Twitch Embed:
+        // 1. slavaslavich.github.io (Production)
+        // 2. localhost (Testing)
+        // 3. 127.0.0.1 (Testing)
+        const domain = window.location.hostname;
+
+        // We add current domain to parents list automatically to ensure it works wherever deployed
+        let parents = ['slavaslavich.github.io', 'localhost', '127.0.0.1'];
+        if (!parents.includes(domain) && domain) {
+            parents.push(domain);
+        }
+
+        const parentParams = parents.map(p => `parent=${p}`).join('&');
+
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://player.twitch.tv/?channel=${channel}&${parentParams}&muted=false`;
+        iframe.height = "100%";
+        iframe.width = "100%";
+        iframe.allowFullscreen = true;
+        iframe.style.border = "none";
+
+        container.appendChild(iframe);
+    }
+}
+
+/* --- RENDER LIVE SECTION (Now just triggers player setup) --- */
 function renderLiveSection() {
-    const container = document.getElementById('live-container');
-    if (!container) return;
-
-    container.innerHTML = '';
-
-    // User requested to remove live matches list.
-    // Displaying a placeholder for the broadcast instead.
-    container.innerHTML = `
-        <div class="empty-state">
-            <i class="fa-solid fa-tower-broadcast"></i>
-            <p>Трансляция ожидается</p>
-        </div>
-    `;
+    // The HTML structure is now static in index.html, 
+    // we just need to init the player logic.
+    setupTwitchPlayer();
 }
