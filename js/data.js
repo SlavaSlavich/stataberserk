@@ -5,7 +5,7 @@ const LIVE_MATCHES = [
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Lancer",
-        "score": "5-7",
+        "score": "7-8",
         "status": "LIVE",
         "time": "19-01-2026 01:19",
         "odds": {
@@ -30,6 +30,24 @@ const LIVE_MATCHES = [
             "p1": "1.85",
             "x": "3.50",
             "p2": "1.85"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Ignis_vs_Havoc",
+        "league": "Berserk CS2 League 2026 Week #4",
+        "team1": "Ignis",
+        "team2": "Havoc",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "19-01-2026 02:00",
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
