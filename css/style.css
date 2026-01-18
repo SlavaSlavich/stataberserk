@@ -222,6 +222,57 @@ body {
     font-size: 18px;
 }
 
+/* --- SUBMENU --- */
+.submenu {
+    list-style: none;
+    padding-left: 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    margin-bottom: 5px;
+}
+
+.submenu.open {
+    max-height: 200px;
+    /* Arbitrary height for animation */
+    margin-bottom: 15px;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    /* "чуть меньше шрифт" -> slightly smaller padding */
+    color: var(--text-muted);
+    font-size: 13px;
+    /* Smaller font */
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+    margin-top: 4px;
+    border-left: 2px solid transparent;
+}
+
+.submenu-item:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.submenu-item.active {
+    color: var(--primary-color);
+    background: rgba(0, 255, 136, 0.05);
+    border-left-color: var(--primary-color);
+}
+
+.submenu-item i {
+    font-size: 14px;
+    width: 20px;
+    text-align: center;
+    opacity: 0.8;
+}
+
 .league-selector {
     margin-top: auto;
     margin-bottom: 20px;
