@@ -991,16 +991,20 @@ body {
     animation: fadeIn 0.2s ease;
 }
 
-/* BRIDGE GAP FOR MOUSE LEAVE */
-.filter-dropdown-menu::before {
+
+
+/* BRIDGE GAP FOR MOUSE LEAVE (Attached to Button now) */
+.filter-trigger.active::after {
     content: '';
     position: absolute;
-    top: -20px;
-    /* Oversized to bridge gap */
+    bottom: -20px;
+    /* Extend downwards */
     left: 0;
     width: 100%;
-    height: 20px;
+    height: 30px;
+    /* Cover button bottom and gap */
     background: transparent;
+    z-index: 1002;
 }
 
 .filter-dropdown-menu.show {
