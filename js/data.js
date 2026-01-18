@@ -35,15 +35,18 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    },
+    }
+];
+const MATCH_HISTORY = [
     {
-        "id": "Ignis_vs_Jagger",
+        "id": "Ignis_vs_Jagger_1768722709",
+        "time": "18-01-2026 10:45",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Ignis",
         "team2": "Jagger",
         "score": "12-3",
-        "status": "LIVE",
-        "time": "18-01-2026 10:45",
+        "winner": "team1",
+        "map_num": 1,
         "odds": {
             "p1": "2.3",
             "x": "3.50",
@@ -53,9 +56,7 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Raze_vs_Ignis_1768722411",
         "time": "18-01-2026 10:36",
