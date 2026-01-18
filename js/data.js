@@ -25,7 +25,7 @@ const LIVE_MATCHES = [
         "team2": "Phantom",
         "score": "11-13",
         "status": "LIVE",
-        "time": "18-01-2026 02:54",
+        "time": "19-01-2026 02:54",
         "odds": {
             "p1": "2.8",
             "x": "3.50",
@@ -59,7 +59,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768689371",
-        "time": "18-01-2026 01:37",
+        "time": "19-01-2026 01:37",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -78,7 +78,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768689371",
-        "time": "18-01-2026 01:46",
+        "time": "19-01-2026 01:46",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -97,7 +97,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768689355",
-        "time": "18-01-2026 01:28",
+        "time": "19-01-2026 01:28",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -116,7 +116,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768688774",
-        "time": "18-01-2026 01:19",
+        "time": "19-01-2026 01:19",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -135,7 +135,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768688235",
-        "time": "18-01-2026 01:10",
+        "time": "19-01-2026 01:10",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -154,7 +154,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768687657",
-        "time": "18-01-2026 01:01",
+        "time": "19-01-2026 01:01",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -173,7 +173,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768687164",
-        "time": "18-01-2026 00:52",
+        "time": "19-01-2026 00:52",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -192,7 +192,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768686558",
-        "time": "18-01-2026 00:43",
+        "time": "19-01-2026 00:43",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -211,7 +211,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768686170",
-        "time": "18-01-2026 00:34",
+        "time": "19-01-2026 00:34",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -230,7 +230,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768685622",
-        "time": "18-01-2026 00:25",
+        "time": "19-01-2026 00:25",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -249,7 +249,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768684914",
-        "time": "18-01-2026 00:16",
+        "time": "19-01-2026 00:16",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -268,7 +268,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768684552",
-        "time": "18-01-2026 00:07",
+        "time": "19-01-2026 00:07",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -287,7 +287,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768683897",
-        "time": "17-01-2026 23:58",
+        "time": "18-01-2026 23:58",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -306,7 +306,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768683365",
-        "time": "17-01-2026 23:49",
+        "time": "18-01-2026 23:49",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -325,7 +325,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768682826",
-        "time": "17-01-2026 23:40",
+        "time": "18-01-2026 23:40",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -344,7 +344,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768682471",
-        "time": "17-01-2026 23:31",
+        "time": "18-01-2026 23:31",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -363,7 +363,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768680707",
-        "time": "17-01-2026 23:05",
+        "time": "18-01-2026 23:05",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -382,7 +382,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768680384",
-        "time": "17-01-2026 22:56",
+        "time": "18-01-2026 22:56",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -401,7 +401,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768679604",
-        "time": "17-01-2026 22:47",
+        "time": "18-01-2026 22:47",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -420,7 +420,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768679110",
-        "time": "17-01-2026 22:38",
+        "time": "18-01-2026 22:38",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -439,7 +439,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768678609",
-        "time": "17-01-2026 22:29",
+        "time": "18-01-2026 22:29",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -458,7 +458,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768678501",
-        "time": "17-01-2026 22:20",
+        "time": "18-01-2026 22:20",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -477,7 +477,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768677491",
-        "time": "17-01-2026 22:11",
+        "time": "18-01-2026 22:11",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -496,7 +496,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768676905",
-        "time": "17-01-2026 22:02",
+        "time": "18-01-2026 22:02",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -515,7 +515,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768676419",
-        "time": "17-01-2026 21:53",
+        "time": "18-01-2026 21:53",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -534,7 +534,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768675824",
-        "time": "17-01-2026 21:44",
+        "time": "18-01-2026 21:44",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -553,7 +553,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768675329",
-        "time": "17-01-2026 21:35",
+        "time": "18-01-2026 21:35",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -572,7 +572,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768674781",
-        "time": "17-01-2026 21:26",
+        "time": "18-01-2026 21:26",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -591,7 +591,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768674302",
-        "time": "17-01-2026 21:17",
+        "time": "18-01-2026 21:17",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -610,7 +610,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768673712",
-        "time": "17-01-2026 21:08",
+        "time": "18-01-2026 21:08",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -629,7 +629,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768673269",
-        "time": "17-01-2026 20:59",
+        "time": "18-01-2026 20:59",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -648,7 +648,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768672593",
-        "time": "17-01-2026 20:50",
+        "time": "18-01-2026 20:50",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -667,7 +667,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768671151",
-        "time": "17-01-2026 20:24",
+        "time": "18-01-2026 20:24",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -686,7 +686,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768670521",
-        "time": "17-01-2026 20:15",
+        "time": "18-01-2026 20:15",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -705,7 +705,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768670044",
-        "time": "17-01-2026 20:06",
+        "time": "18-01-2026 20:06",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -724,7 +724,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768669424",
-        "time": "17-01-2026 19:57",
+        "time": "18-01-2026 19:57",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -743,7 +743,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768668964",
-        "time": "17-01-2026 19:48",
+        "time": "18-01-2026 19:48",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -762,7 +762,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768668351",
-        "time": "17-01-2026 19:39",
+        "time": "18-01-2026 19:39",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -781,7 +781,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768667929",
-        "time": "17-01-2026 19:30",
+        "time": "18-01-2026 19:30",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -800,7 +800,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768667312",
-        "time": "17-01-2026 19:21",
+        "time": "18-01-2026 19:21",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -819,7 +819,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768666738",
-        "time": "17-01-2026 19:12",
+        "time": "18-01-2026 19:12",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -838,7 +838,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768666216",
-        "time": "17-01-2026 19:03",
+        "time": "18-01-2026 19:03",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -857,7 +857,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768665654",
-        "time": "17-01-2026 18:54",
+        "time": "18-01-2026 18:54",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -876,7 +876,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768665128",
-        "time": "17-01-2026 18:45",
+        "time": "18-01-2026 18:45",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -895,7 +895,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768664542",
-        "time": "17-01-2026 18:36",
+        "time": "18-01-2026 18:36",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -914,7 +914,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768664089",
-        "time": "17-01-2026 18:27",
+        "time": "18-01-2026 18:27",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -933,7 +933,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Flux_vs_Glare_1768663517",
-        "time": "17-01-2026 18:18",
+        "time": "18-01-2026 18:18",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Flux",
         "team2": "Glare",
@@ -952,7 +952,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Flux_1768662986",
-        "time": "17-01-2026 18:09",
+        "time": "18-01-2026 18:09",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Flux",
@@ -971,7 +971,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Myst_vs_Glare_1768662413",
-        "time": "17-01-2026 18:00",
+        "time": "18-01-2026 18:00",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
         "team2": "Glare",
@@ -990,7 +990,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Jagger_vs_Havoc_1768661563",
-        "time": "17-01-2026 17:46",
+        "time": "18-01-2026 17:46",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Jagger",
         "team2": "Havoc",
