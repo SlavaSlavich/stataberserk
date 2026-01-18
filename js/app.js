@@ -283,6 +283,15 @@ function setupFilters() {
             const col = btn.dataset.col;
             toggleFilterDropdown(btn, col);
         });
+
+        // Auto-close on mouse leave (User Request)
+        btn.addEventListener('mouseleave', () => {
+            const dropdown = btn.querySelector('.filter-dropdown-menu');
+            if (dropdown) {
+                dropdown.remove();
+                btn.classList.remove('active');
+            }
+        });
     });
 
     // Close dropdowns when clicking outside
@@ -660,6 +669,11 @@ function renderDashboard(data = null) {
             <td style="text-align: center;">${scoreCol2}</td>
             <td style="text-align: center;">${scoreCol3}</td>
         `;
+
+        // Add staggered animation delay
+        // (index - startIndex) gives the index relative to the current page/render batch
+        const relativeIndex = matchesToRender.indexOf(match);
+        row.style.animationDelay = `${relativeIndex * 0.05}s`;
 
         tbody.appendChild(row);
     });
