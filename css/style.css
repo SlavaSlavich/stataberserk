@@ -674,11 +674,33 @@ body {
 }
 
 .modern-table tr {
-    transition: background 0.2s;
+    transition: all 0.2s ease;
+    animation: tableRowSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    /* HIDDEN INITIALLY, JS will handle delays or we rely on animation filling */
+    transform: translateY(10px);
 }
 
 .modern-table tr:hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.03) 100%);
+    transform: scale(1.01);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@keyframes tableRowSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 /* Status Badges */
@@ -995,10 +1017,7 @@ body {
     height: 14px;
 }
 
-/* Remove default inheritance issues for TH inside table */
-.modern-table th {
-    /* overflow: visible; -> needed for absolute dropdown if not using portal */
-}
+/* Filter Row Styles */
 
 
 /* FILTER ROW STYLES (Added) */
@@ -1022,6 +1041,8 @@ body {
     justify-content: space-between;
     gap: 8px;
     min-width: 80px;
+    position: relative;
+    /* Fix for dropdown flight */
 }
 
 .filter-trigger.full-width {
@@ -1165,4 +1186,113 @@ body {
 .subscribe-btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(255, 215, 0, 0.5);
+}
+
+/* --- LOCKED ANALYTICS VIEW --- */
+.analytics-locked-wrapper {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 15, 0.6);
+    backdrop-filter: blur(8px);
+    /* The Blur Effect */
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lock-content {
+    text-align: center;
+    max-width: 400px;
+    padding: 40px;
+    background: rgba(20, 20, 27, 0.9);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    animation: slideUp 0.5s ease;
+}
+
+.lock-content h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fake-dashboard {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0.3;
+    /* Faded bg */
+    filter: blur(2px);
+    /* Extra blur on content */
+    pointer-events: none;
+}
+
+.fake-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.top-card {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fake-chart-line {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, transparent 0%, var(--primary-color) 50%, transparent 100%);
+    opacity: 0.4;
+    transform: skewY(-5deg);
+}
+
+.fake-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.small-card {
+    height: 120px;
+}
+
+.bottom-card {
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.fake-bars {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.bar {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
