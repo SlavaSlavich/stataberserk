@@ -1,5 +1,42 @@
 
-const LIVE_MATCHES = [];
+const LIVE_MATCHES = [
+    {
+        "id": "Flux_vs_Myst",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Flux",
+        "team2": "Myst",
+        "score": "3-0",
+        "status": "LIVE",
+        "time": "1-я карта",
+        "odds": {
+            "p1": "1.28",
+            "x": "3.50",
+            "p2": "3.3"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Myst_vs_Lancer",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Myst",
+        "team2": "Lancer",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "18-01-2026 23:49",
+        "odds": {
+            "p1": "2.35",
+            "x": "3.50",
+            "p2": "1.52"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    }
+];
 const MATCH_HISTORY = [
     {
         "id": "Flux_vs_Myst_1768767796",
@@ -945,25 +982,6 @@ const MATCH_HISTORY = [
             "p1": "1.68",
             "x": "3.50",
             "p2": "2.05"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Ignis_vs_Jagger_1768738284",
-        "time": "18-01-2026 15:05",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Ignis",
-        "team2": "Jagger",
-        "score": "3-12",
-        "winner": "team2",
-        "map_num": 1,
-        "odds": {
-            "p1": "2.4",
-            "x": "3.50",
-            "p2": "1.5"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
