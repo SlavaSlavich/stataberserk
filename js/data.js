@@ -19,24 +19,6 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "Zenith_vs_Phantom",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Zenith",
-        "team2": "Phantom",
-        "score": "4-13",
-        "status": "LIVE",
-        "time": "18-01-2026 08:43",
-        "odds": {
-            "p1": "2.6",
-            "x": "3.50",
-            "p2": "1.45"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Evoker_vs_Phantom",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Evoker",
@@ -56,6 +38,25 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Zenith_vs_Phantom_1768715448",
+        "time": "18-01-2026 08:43",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Zenith",
+        "team2": "Phantom",
+        "score": "4-13",
+        "winner": "team2",
+        "map_num": 1,
+        "odds": {
+            "p1": "2.6",
+            "x": "3.50",
+            "p2": "1.45"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Evoker_vs_Zenith_1768715165",
         "time": "18-01-2026 08:34",
