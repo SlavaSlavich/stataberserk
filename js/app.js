@@ -19,6 +19,7 @@ function getNestedValue(obj, path) {
 }
 
 function initApp() {
+    checkAuth(); // AUTH CHECK: Must be first
     updateClock();
     setInterval(updateClock, 1000);
 
@@ -30,6 +31,31 @@ function initApp() {
     // Default render
     renderDashboard();
     renderLiveSection();
+}
+
+/* --- AUTHENTICATION --- */
+function checkAuth() {
+    const authOverlay = document.getElementById('auth-overlay');
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('auth_token');
+
+    // 1. Check if token comes from URL (Redirect from Bot)
+    if (token) {
+        // Save to local storage
+        localStorage.setItem('site_auth_token', token);
+        // Clean URL
+        window.history.replaceState({}, document.title, window.location.pathname);
+        authOverlay.style.display = 'none';
+        return;
+    }
+
+    // 2. Check Local Storage
+    const storedToken = localStorage.getItem('site_auth_token');
+    if (storedToken) {
+        authOverlay.style.display = 'none';
+    } else {
+        authOverlay.style.display = 'flex'; // Block access
+    }
 }
 
 /* --- MOBILE TOGGLE --- */
