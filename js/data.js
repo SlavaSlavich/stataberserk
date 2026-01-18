@@ -19,24 +19,6 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "Flux_vs_Myst",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Flux",
-        "team2": "Myst",
-        "score": "12-9",
-        "status": "LIVE",
-        "time": "1-я карта",
-        "odds": {
-            "p1": "1.03",
-            "x": "3.50",
-            "p2": "9.0"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Myst_vs_Lancer",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Myst",
@@ -56,6 +38,25 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Flux_vs_Myst_1768766523",
+        "time": "1-я карта",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Flux",
+        "team2": "Myst",
+        "score": "12-9",
+        "winner": "team1",
+        "map_num": 1,
+        "odds": {
+            "p1": "1.03",
+            "x": "3.50",
+            "p2": "9.0"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Flux_vs_Myst_1768764203",
         "time": "18-01-2026 22:29",
