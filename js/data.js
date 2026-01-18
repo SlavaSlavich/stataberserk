@@ -1,6 +1,24 @@
 
 const LIVE_MATCHES = [
     {
+        "id": "Evoker_vs_Zenith",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Evoker",
+        "team2": "Zenith",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "18-01-2026 08:34",
+        "odds": {
+            "p1": "2.15",
+            "x": "3.50",
+            "p2": "1.62"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
         "id": "Zenith_vs_Phantom",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Zenith",
