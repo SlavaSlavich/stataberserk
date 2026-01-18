@@ -161,9 +161,20 @@
             <div id="view-live" class="view-section">
                 <div class="section-header">
                     <h2>Трансляция LIVE</h2>
+                    <div class="channel-select-wrapper">
+                        <select id="twitch-channel-select" class="modern-select">
+                            <!-- Options will be populated by JS or hardcoded -->
+                            <option value="berserk_cs2_league">1x1 CS 2 Berserk League</option>
+                            <option value="berserk_dota2_league">1x1 DOTA 2 Berserk League</option>
+                            <option value="ecs_tv">ML BB Epic Clash Series</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="live-grid-container" id="live-container">
-                    <!-- Cards -->
+                    <!-- Helper text or initial state if needed, JS handles the player injection -->
+                    <div id="twitch-player-wrapper" class="video-container">
+                        <!-- iframe will be here -->
+                    </div>
                 </div>
             </div>
 
