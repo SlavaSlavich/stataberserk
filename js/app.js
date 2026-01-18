@@ -55,6 +55,19 @@ function setupNavigation() {
     const navItems = document.querySelectorAll('.nav-item');
     const sections = document.querySelectorAll('.view-section');
     const submenu = document.getElementById('live-submenu');
+
+    // 0. GENERATE SUBMENU FROM DATA
+    if (submenu && typeof TWITCH_CHANNELS !== 'undefined' && TWITCH_CHANNELS.length > 0) {
+        submenu.innerHTML = '';
+        TWITCH_CHANNELS.forEach(channel => {
+            const li = document.createElement('li');
+            li.className = 'submenu-item';
+            li.dataset.channel = channel.channel;
+            li.innerHTML = `<i class="${channel.icon || 'fa-solid fa-gamepad'}"></i> ${channel.name}`;
+            submenu.appendChild(li);
+        });
+    }
+
     const submenuItems = document.querySelectorAll('.submenu-item');
 
     // Modal elements
@@ -683,6 +696,19 @@ function setupTwitchPlayer(channelName = null) {
 
     // Clear previous
     container.innerHTML = '';
+
+    // CHECK FOR LOCAL FILE PROTOCOL
+    if (window.location.protocol === 'file:') {
+        container.innerHTML = `
+            <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; color:#fff; text-align:center;">
+                <i class="fa-solid fa-triangle-exclamation" style="font-size:48px; color:#ff4d4d; margin-bottom:20px;"></i>
+                <h3 style="margin-bottom:10px;">Плеер не работает локально</h3>
+                <p style="color:#8b8b9b; max-width:80%;">Политика безопасности Twitch запрещает запуск видео из файлов (file://).</p>
+                <p style="color:#00ff88; margin-top:10px; font-weight:600;">Загрузите сайт на GitHub, и видео заработает!</p>
+            </div>
+        `;
+        return;
+    }
 
     // Construct Iframe
     const domain = window.location.hostname;
