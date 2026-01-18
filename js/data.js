@@ -1,13 +1,15 @@
 
-const LIVE_MATCHES = [
+const LIVE_MATCHES = [];
+const MATCH_HISTORY = [
     {
-        "id": "Ignis_vs_Havoc",
+        "id": "Ignis_vs_Havoc_1768777323",
+        "time": "1-я карта",
         "league": "Berserk CS2 League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
         "score": "5-3",
-        "status": "LIVE",
-        "time": "1-я карта",
+        "winner": "team1",
+        "map_num": 1,
         "odds": {
             "p1": "1.72",
             "x": "3.50",
@@ -17,9 +19,7 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Flux_vs_Lancer_1768776575",
         "time": "1-я карта",
