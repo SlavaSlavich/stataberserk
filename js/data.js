@@ -1,24 +1,6 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Flux_vs_Myst",
-        "league": "1x1 Berserk League 2026 Week #3",
-        "team1": "Flux",
-        "team2": "Myst",
-        "score": "13-8",
-        "status": "LIVE",
-        "time": "19-01-2026 01:28",
-        "odds": {
-            "p1": "1.85",
-            "x": "3.50",
-            "p2": "1.85"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Ignis_vs_Havoc",
         "league": "Berserk CS2 League 2026 Week #4",
         "team1": "Ignis",
@@ -38,6 +20,25 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Flux_vs_Myst_1768775629",
+        "time": "19-01-2026 01:28",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Flux",
+        "team2": "Myst",
+        "score": "13-8",
+        "winner": "team1",
+        "map_num": 1,
+        "odds": {
+            "p1": "1.85",
+            "x": "3.50",
+            "p2": "1.85"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Myst_vs_Lancer_1768775381",
         "time": "19-01-2026 01:37",
