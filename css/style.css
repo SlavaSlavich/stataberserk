@@ -991,6 +991,18 @@ body {
     animation: fadeIn 0.2s ease;
 }
 
+/* BRIDGE GAP FOR MOUSE LEAVE */
+.filter-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    /* Oversized to bridge gap */
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+}
+
 .filter-dropdown-menu.show {
     display: block;
 }
