@@ -19,6 +19,24 @@ const LIVE_MATCHES = [
         }
     },
     {
+        "id": "Raze_vs_Ignis",
+        "league": "1x1 Berserk League 2026 Week #3",
+        "team1": "Raze",
+        "team2": "Ignis",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "18-01-2026 16:07",
+        "odds": {
+            "p1": "1.38",
+            "x": "3.50",
+            "p2": "2.8"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
         "id": "Ignis_vs_Jagger",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Ignis",
