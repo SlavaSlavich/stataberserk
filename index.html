@@ -41,7 +41,7 @@
                 <!-- Live is separate or part of dashboard? Let's keep separate for focused view if needed -->
                 <li class="nav-item" data-tab="live">
                     <i class="fa-solid fa-tower-broadcast"></i>
-                    <span>Только LIVE</span>
+                    <span class="nav-text">Трансляция LIVE</span>
                 </li>
                 <li class="nav-item" data-tab="analytics">
                     <i class="fa-solid fa-chart-pie"></i>
@@ -160,7 +160,7 @@
             <!-- Data View: Live Grid (Optional Focused View) -->
             <div id="view-live" class="view-section">
                 <div class="section-header">
-                    <h2>Только LIVE</h2>
+                    <h2>Трансляция LIVE</h2>
                 </div>
                 <div class="live-grid-container" id="live-container">
                     <!-- Cards -->
@@ -175,6 +175,22 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <!-- Subscription Modal -->
+    <div id="subscription-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <div class="modal-icon">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <h2>Доступно по подписке</h2>
+                <p>Раздел "Аналитика" доступен только для PREMIUM пользователей.<br>Оформите подписку, чтобы получить
+                    доступ к детальной статистике и прогнозам.</p>
+                <button class="subscribe-btn">Оформить подписку</button>
+            </div>
+        </div>
     </div>
 
     <script src="js/data.js"></script>
