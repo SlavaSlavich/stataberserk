@@ -54,6 +54,8 @@ function setupMobileToggle() {
 function setupNavigation() {
     const navItems = document.querySelectorAll('.nav-item');
     const sections = document.querySelectorAll('.view-section');
+    const submenu = document.getElementById('live-submenu');
+    const submenuItems = document.querySelectorAll('.submenu-item');
 
     // Modal elements
     const modal = document.getElementById('subscription-modal');
@@ -81,6 +83,7 @@ function setupNavigation() {
         });
     }
 
+    // 1. MAIN NAV ITEMS CLICK
     navItems.forEach(item => {
         item.addEventListener('click', () => {
             const tabName = item.dataset.tab;
@@ -103,6 +106,25 @@ function setupNavigation() {
 
             item.classList.add('active');
 
+            // Handle Submenu Toggle for LIVE tab
+            if (tabName === 'live') {
+                if (submenu) {
+                    submenu.classList.add('open');
+                    // Select first channel by default if none selected
+                    const currentActive = submenu.querySelector('.active');
+                    if (!currentActive && submenuItems.length > 0) {
+                        // Click the first one to load it
+                        submenuItems[0].click();
+                    } else if (currentActive) {
+                        // Just ensure player is refreshed if needed (optional)
+                    }
+                }
+            } else {
+                // Close submenu if moving away from live (optional, user might want it open)
+                // Let's keep it closed to clean up sidebar
+                if (submenu) submenu.classList.remove('open');
+            }
+
             const sectionId = `view-${tabName}`;
             const targetSection = document.getElementById(sectionId);
 
@@ -116,6 +138,33 @@ function setupNavigation() {
             }
         });
     });
+
+    // 2. SUBMENU ITEMS CLICK
+    if (submenuItems) {
+        submenuItems.forEach(subItem => {
+            subItem.addEventListener('click', (e) => {
+                e.stopPropagation(); // Don't trigger parent nav click if nested (it's not nested now, but safe practice)
+
+                // Visuals
+                submenuItems.forEach(s => s.classList.remove('active'));
+                subItem.classList.add('active');
+
+                // Ensure parent "Live" tab is visually active if not already
+                const liveNav = document.querySelector('.nav-item[data-tab="live"]');
+                if (liveNav && !liveNav.classList.contains('active')) {
+                    // switch the view to live
+                    liveNav.click(); // This will re-trigger the main nav logic
+                    return; // The click above triggers the logic, but we might lose the "active" class on subItem depending on execution order.
+                    // Actually the click handler above would find the active subItem and do nothing or reset.
+                    // Let's just manually set view active.
+                }
+
+                // Actually Switch Player
+                const channel = subItem.dataset.channel;
+                setupTwitchPlayer(channel);
+            });
+        });
+    }
 }
 
 function updateClock() {
@@ -618,50 +667,42 @@ function renderDashboard(data = null) {
 
 /* --- RENDER LIVE CARD VIEW --- */
 /* --- TWITCH EMBED LOGIC --- */
-function setupTwitchPlayer() {
-    const select = document.getElementById('twitch-channel-select');
+/* --- TWITCH EMBED LOGIC --- */
+function setupTwitchPlayer(channelName = null) {
     const container = document.getElementById('twitch-player-wrapper');
+    if (!container) return;
 
-    if (!select || !container) return; // Not on this page or elements missing
-
-    // Initial render
-    updatePlayer(select.value);
-
-    // Change listener
-    select.addEventListener('change', (e) => {
-        updatePlayer(e.target.value);
-    });
-
-    function updatePlayer(channel) {
-        // Clear previous
-        container.innerHTML = '';
-
-        if (!channel) return;
-
-        // Construct Iframe
-        // Parent domain required for Twitch Embed:
-        // 1. slavaslavich.github.io (Production)
-        // 2. localhost (Testing)
-        // 3. 127.0.0.1 (Testing)
-        const domain = window.location.hostname;
-
-        // We add current domain to parents list automatically to ensure it works wherever deployed
-        let parents = ['slavaslavich.github.io', 'localhost', '127.0.0.1'];
-        if (!parents.includes(domain) && domain) {
-            parents.push(domain);
-        }
-
-        const parentParams = parents.map(p => `parent=${p}`).join('&');
-
-        const iframe = document.createElement('iframe');
-        iframe.src = `https://player.twitch.tv/?channel=${channel}&${parentParams}&muted=false`;
-        iframe.height = "100%";
-        iframe.width = "100%";
-        iframe.allowFullscreen = true;
-        iframe.style.border = "none";
-
-        container.appendChild(iframe);
+    // If no channel passed, try to use default or currently stored
+    // For now, if null, do nothing or wait for click
+    if (!channelName) {
+        // Maybe load default?
+        // Let's load the first one from submenu if logic allows, 
+        // but typically this function is called with a specific channel now.
+        return;
     }
+
+    // Clear previous
+    container.innerHTML = '';
+
+    // Construct Iframe
+    const domain = window.location.hostname;
+
+    // We add current domain to parents list automatically to ensure it works wherever deployed
+    let parents = ['slavaslavich.github.io', 'localhost', '127.0.0.1'];
+    if (!parents.includes(domain) && domain) {
+        parents.push(domain);
+    }
+
+    const parentParams = parents.map(p => `parent=${p}`).join('&');
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://player.twitch.tv/?channel=${channelName}&${parentParams}&muted=false`;
+    iframe.height = "100%";
+    iframe.width = "100%";
+    iframe.allowFullscreen = true;
+    iframe.style.border = "none";
+
+    container.appendChild(iframe);
 }
 
 /* --- RENDER LIVE SECTION (Now just triggers player setup) --- */
