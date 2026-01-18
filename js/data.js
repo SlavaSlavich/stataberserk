@@ -6,8 +6,29 @@ const LIVE_MATCHES = [
         "team1": "Ignis",
         "team2": "Havoc",
         "score": "0-0",
-        "status": "LIVE",
+        "status": "Coming Soon",
+        "time": "19-01-2026 02:45",
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    }
+];
+const MATCH_HISTORY = [
+    {
+        "id": "Ignis_vs_Havoc_1768778805",
         "time": "1-я карта",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Ignis",
+        "team2": "Havoc",
+        "score": "0-0",
+        "winner": null,
+        "map_num": null,
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -17,9 +38,7 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Ignis_vs_Havoc_1768778535",
         "time": "19-01-2026 02:27",
