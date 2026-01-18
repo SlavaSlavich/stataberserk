@@ -24,7 +24,7 @@ const LIVE_MATCHES = [
         "team1": "Raze",
         "team2": "Ignis",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "18-01-2026 14:29",
         "odds": {
             "p1": "1.42",
