@@ -55,14 +55,54 @@ function setupNavigation() {
     const navItems = document.querySelectorAll('.nav-item');
     const sections = document.querySelectorAll('.view-section');
 
+    // Modal elements
+    const modal = document.getElementById('subscription-modal');
+    const closeModal = document.querySelector('.close-modal');
+
+    // Close modal function
+    const hideModal = () => {
+        if (modal) {
+            modal.style.opacity = '0';
+            setTimeout(() => {
+                modal.style.display = 'none';
+                modal.classList.remove('show');
+            }, 300);
+        }
+    };
+
+    if (closeModal) {
+        closeModal.addEventListener('click', hideModal);
+    }
+
+    // Close on background click
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) hideModal();
+        });
+    }
+
     navItems.forEach(item => {
         item.addEventListener('click', () => {
+            const tabName = item.dataset.tab;
+
+            // INTERCEPT ANALYTICS
+            if (tabName === 'analytics') {
+                if (modal) {
+                    modal.style.display = 'flex';
+                    // Force reflow
+                    modal.offsetHeight;
+                    modal.classList.add('show');
+                    modal.style.opacity = '1';
+                }
+                return; // Stop here, don't switch tab
+            }
+
+            // Normal Tab Switching
             navItems.forEach(nav => nav.classList.remove('active'));
             sections.forEach(sec => sec.classList.remove('active'));
 
             item.classList.add('active');
 
-            const tabName = item.dataset.tab;
             const sectionId = `view-${tabName}`;
             const targetSection = document.getElementById(sectionId);
 
@@ -582,43 +622,13 @@ function renderLiveSection() {
     if (!container) return;
 
     container.innerHTML = '';
-    const safeLive = (typeof LIVE_MATCHES !== 'undefined') ? LIVE_MATCHES : [];
 
-    if (safeLive.length === 0) {
-        container.innerHTML = `
-            <div class="empty-state">
-                <i class="fa-solid fa-gamepad"></i>
-                <p>Нет активных матчей</p>
-            </div>
-        `;
-        return;
-    }
-
-    safeLive.forEach(match => {
-        const card = document.createElement('div');
-        card.className = 'live-card';
-        card.innerHTML = `
-            <div class="card-header">
-                <span class="league-name">${match.league}</span>
-                <span class="live-tag"><i class="fa-solid fa-circle fa-beat-fade" style="font-size: 8px; margin-right: 5px;"></i> LIVE</span>
-            </div>
-            <div class="matchup">
-                <div class="team">
-                    <img src="${match.logos.t1}" class="team-logo">
-                    <span class="team-name">${match.team1}</span>
-                </div>
-                <div class="score-board">${match.score}</div>
-                <div class="team">
-                    <img src="${match.logos.t2}" class="team-logo">
-                    <span class="team-name">${match.team2}</span>
-                </div>
-            </div>
-            <div class="odds-row">
-                <div class="odd-box"><div>1</div><span>${match.odds.p1}</span></div>
-                <div class="odd-box"><div>X</div><span>${match.odds.x}</span></div>
-                <div class="odd-box"><div>2</div><span>${match.odds.p2}</span></div>
-            </div>
-        `;
-        container.appendChild(card);
-    });
+    // User requested to remove live matches list.
+    // Displaying a placeholder for the broadcast instead.
+    container.innerHTML = `
+        <div class="empty-state">
+            <i class="fa-solid fa-tower-broadcast"></i>
+            <p>Трансляция ожидается</p>
+        </div>
+    `;
 }
