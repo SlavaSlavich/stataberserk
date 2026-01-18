@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS2 BERSERK STATS</title>
+    <title>STATAGGG - CS2 STATS</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
             <div class="logo-area">
                 <i class="fa-solid fa-gamepad logo-icon"></i>
                 <div class="logo-text-wrapper">
-                    <span class="logo-text glitch" data-text="STATGAMES">STAT<span class="highlight">GAMES</span></span>
+                    <span class="logo-text glitch" data-text="STATAGGG">STAT<span class="highlight">AGGG</span></span>
                 </div>
             </div>
 
@@ -177,9 +177,41 @@
 
             <!-- Data View: Analytics (Stub) -->
             <div id="view-analytics" class="view-section">
-                <div class="empty-state">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <p>Аналитика в разработке</p>
+                <div class="analytics-locked-wrapper">
+                    <div class="blur-overlay">
+                        <div class="lock-content">
+                            <i class="fa-solid fa-crown"
+                                style="font-size: 48px; color: #ffd700; margin-bottom: 20px;"></i>
+                            <h2>PREMIUM АНАЛИТИКА</h2>
+                            <p>Разблокируйте доступ к детальной статистике, прогнозам на основе AI и истории
+                                коэффициентов.</p>
+                            <button class="subscribe-btn"
+                                onclick="document.getElementById('subscription-modal').style.display='flex'">
+                                Оформить подписку
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- FAKE DASHBOARD BACKGROUND -->
+                    <div class="fake-dashboard">
+                        <div class="fake-card top-card">
+                            <div class="fake-chart-line"></div>
+                        </div>
+                        <div class="fake-grid">
+                            <div class="fake-card small-card"></div>
+                            <div class="fake-card small-card"></div>
+                            <div class="fake-card small-card"></div>
+                        </div>
+                        <div class="fake-card bottom-card">
+                            <div class="fake-bars">
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                                <div class="bar" style="height: 50%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -197,6 +229,26 @@
                 <p>Раздел "Аналитика" доступен только для PREMIUM пользователей.<br>Оформите подписку, чтобы получить
                     доступ к детальной статистике и прогнозам.</p>
                 <button class="subscribe-btn">Оформить подписку</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AUTH OVERLAY (Telegram Login) -->
+    <div id="auth-overlay" class="auth-overlay" style="display: none;">
+        <div class="auth-box">
+            <div class="auth-icon">
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <h2>Требуется авторизация</h2>
+            <p>Для доступа к полному функционалу сайта и фильтрам необходимо авторизоваться через нашего Telegram бота.
+            </p>
+
+            <a href="https://t.me/StatistikaBerserkCS_bot?start=site_access" target="_blank" class="auth-btn">
+                <i class="fa-regular fa-paper-plane"></i> Войти через Telegram
+            </a>
+
+            <div class="auth-footer">
+                <p>После нажатия нажмите <strong>START</strong> в боте</p>
             </div>
         </div>
     </div>
