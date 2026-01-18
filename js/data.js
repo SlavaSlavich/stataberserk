@@ -6,7 +6,7 @@ const LIVE_MATCHES = [
         "team1": "Evoker",
         "team2": "Zenith",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "18-01-2026 09:28",
         "odds": {
             "p1": "2.1",
@@ -35,15 +35,18 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    },
+    }
+];
+const MATCH_HISTORY = [
     {
-        "id": "Evoker_vs_Phantom",
+        "id": "Evoker_vs_Phantom_1768717549",
+        "time": "18-01-2026 09:19",
         "league": "1x1 Berserk League 2026 Week #3",
         "team1": "Evoker",
         "team2": "Phantom",
         "score": "7-13",
-        "status": "LIVE",
-        "time": "18-01-2026 09:19",
+        "winner": "team2",
+        "map_num": 1,
         "odds": {
             "p1": "2.7",
             "x": "3.50",
@@ -53,9 +56,7 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Zenith_vs_Phantom_1768717013",
         "time": "18-01-2026 09:10",
