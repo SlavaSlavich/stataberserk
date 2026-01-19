@@ -41,7 +41,7 @@ const LIVE_MATCHES = [
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
-        "score": "0-6",
+        "score": "3-8",
         "status": "LIVE",
         "time": "19.01 21:44",
         "odds": {
@@ -1050,26 +1050,6 @@ const MATCH_HISTORY = [
             "p1": "1.75",
             "x": "3.50",
             "p2": "1.95"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Lancer_vs_Flux_1768812517",
-        "time": "19.01 11:39",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Lancer",
-        "team2": "Flux",
-        "score": "9-13",
-        "winner": "team2",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": "1.52",
-            "x": "3.50",
-            "p2": "2.35"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
