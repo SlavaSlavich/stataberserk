@@ -6,7 +6,7 @@ const LIVE_MATCHES = [
         "team1": "Glare",
         "team2": "Flux",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "19-01-2026 13:26",
         "odds": {
             "p1": "1.75",
@@ -56,6 +56,25 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Lancer_vs_Flux_1768818339",
+        "time": "19-01-2026 13:17",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Lancer",
+        "team2": "Flux",
+        "score": "12-10",
+        "winner": "team1",
+        "map_num": null,
+        "odds": {
+            "p1": "1.75",
+            "x": "3.50",
+            "p2": "1.95"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Glare_vs_Lancer_1768818151",
         "time": "19-01-2026 13:08",
@@ -977,82 +996,6 @@ const MATCH_HISTORY = [
         "score": "13-5",
         "winner": "team1",
         "map_num": null,
-        "odds": {
-            "p1": "2.35",
-            "x": "3.50",
-            "p2": "1.52"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Ignis_vs_Havoc_1768783970",
-        "time": "19-01-2026 03:48",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Ignis",
-        "team2": "Havoc",
-        "score": "10-11",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "2.35",
-            "x": "3.50",
-            "p2": "1.52"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Ignis_vs_Havoc_1768783425",
-        "time": "19-01-2026 03:39",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Ignis",
-        "team2": "Havoc",
-        "score": "9-11",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "2.35",
-            "x": "3.50",
-            "p2": "1.52"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Ignis_vs_Havoc_1768782965",
-        "time": "19-01-2026 03:30",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Ignis",
-        "team2": "Havoc",
-        "score": "11-13",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "2.35",
-            "x": "3.50",
-            "p2": "1.52"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Ignis_vs_Havoc_1768780644",
-        "time": "20-01-2026 02:54",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Ignis",
-        "team2": "Havoc",
-        "score": "1-6",
-        "winner": "team2",
-        "map_num": 1,
         "odds": {
             "p1": "2.35",
             "x": "3.50",
