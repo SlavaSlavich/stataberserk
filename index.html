@@ -51,6 +51,11 @@
                     <i class="fa-solid fa-chart-pie"></i>
                     <span>Аналитика</span>
                 </li>
+                <li class="nav-item" id="updates-trigger">
+                    <i class="fa-solid fa-rocket"></i>
+                    <span>Обновления</span>
+                    <span class="nav-badge">NEW</span>
+                </li>
             </ul>
 
             <!-- League Selector removed as per user request (17-01-2026) -->
@@ -249,6 +254,24 @@
                 <p>Раздел "Аналитика" доступен только для PREMIUM пользователей.<br>Оформите подписку, чтобы получить
                     доступ к детальной статистике и прогнозам.</p>
                 <button class="subscribe-btn">Оформить подписку</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Updates Modal -->
+    <div id="updates-modal" class="modal-overlay">
+        <div class="modal-content updates-modal-content">
+            <button class="close-modal" id="close-updates"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <div class="modal-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h2>История обновлений</h2>
+                <p>Хронология развития и улучшения STATAGGG</p>
+
+                <div class="changelog-container" id="changelog-list">
+                    <!-- Populated by JS -->
+                </div>
             </div>
         </div>
     </div>
