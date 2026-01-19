@@ -82,9 +82,22 @@ function renderUserProfile() {
     }
 
     if (avatarEl) {
-        // Use DiceBear for a nice random-ish avatar based on username
-        const seed = handle || name || 'berserk';
-        avatarEl.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9`;
+        // 📸 REAL TELEGRAM AVATAR INTEGRATION
+        // If user has a handle, we can pull their official TG photo
+        if (handle) {
+            const tgAvatarUrl = `https://t.me/i/userpic/320/${handle}.jpg`;
+            avatarEl.src = tgAvatarUrl;
+
+            // Fallback if TG photo is private or not found
+            avatarEl.onerror = () => {
+                const seed = handle || name || 'berserk';
+                avatarEl.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9`;
+            };
+        } else {
+            // Fallback for users without handles
+            const seed = name || 'berserk';
+            avatarEl.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9`;
+        }
     }
 
     if (logoutBtn) {
