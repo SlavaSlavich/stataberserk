@@ -38,14 +38,22 @@ function checkAuth() {
     const authOverlay = document.getElementById('auth-overlay');
     const urlParams = new URLSearchParams(window.location.search);
     const token = urlParams.get('auth_token');
+    const name = urlParams.get('name');
+    const username = urlParams.get('username');
 
     // 1. Check if token comes from URL (Redirect from Bot)
     if (token) {
         // Save to local storage
         localStorage.setItem('site_auth_token', token);
-        // Clean URL
-        window.history.replaceState({}, document.title, window.location.pathname);
+        if (name) localStorage.setItem('user_name', name);
+        if (username) localStorage.setItem('user_handle', username);
+
+        // IMPORTANT: We DO NOT clean the URL here anymore.
+        // If the user uses Telegram's "Open in Browser" menu, 
+        // the token MUST still be in the URL to pass it to Chrome/Safari.
+
         authOverlay.style.display = 'none';
+        renderUserProfile();
         return;
     }
 
@@ -53,8 +61,43 @@ function checkAuth() {
     const storedToken = localStorage.getItem('site_auth_token');
     if (storedToken) {
         authOverlay.style.display = 'none';
+        renderUserProfile();
     } else {
         authOverlay.style.display = 'flex'; // Block access
+        document.getElementById('user-profile-container').style.display = 'none';
+    }
+}
+
+function renderUserProfile() {
+    const container = document.getElementById('user-profile-container');
+    const nameEl = document.getElementById('user-name');
+    const avatarEl = document.getElementById('user-avatar');
+    const logoutBtn = document.getElementById('logout-btn');
+
+    const name = localStorage.getItem('user_name') || 'Warrior';
+    const handle = localStorage.getItem('user_handle') || '';
+
+    if (nameEl) {
+        nameEl.textContent = handle ? `@${handle}` : name;
+    }
+
+    if (avatarEl) {
+        // Use DiceBear for a nice random-ish avatar based on username
+        const seed = handle || name || 'berserk';
+        avatarEl.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9`;
+    }
+
+    if (logoutBtn) {
+        logoutBtn.onclick = () => {
+            if (confirm('Вы уверены, что хотите выйти?')) {
+                localStorage.clear();
+                window.location.reload();
+            }
+        };
+    }
+
+    if (container) {
+        container.style.display = 'block';
     }
 }
 
