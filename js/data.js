@@ -5,7 +5,7 @@ const LIVE_MATCHES = [
         "league": "1x1 Berserk League",
         "team1": "33",
         "team2": "FB Team",
-        "score": "33-4",
+        "score": "33-5",
         "status": "LIVE",
         "time": "1-я карта",
         "odds": {
