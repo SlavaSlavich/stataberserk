@@ -6,7 +6,7 @@ const LIVE_MATCHES = [
         "team1": "Glare",
         "team2": "Flux",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "19-01-2026 12:59",
         "odds": {
             "p1": "1.75",
