@@ -23,7 +23,7 @@ const LIVE_MATCHES = [
         "league": "1x1 Berserk League",
         "team1": "Team UNiTY",
         "team2": "Fingers Crossed",
-        "score": "5-8",
+        "score": "5-9",
         "status": "LIVE",
         "time": "2-я карта",
         "odds": {
