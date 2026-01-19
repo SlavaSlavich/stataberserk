@@ -987,44 +987,6 @@ const MATCH_HISTORY = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    },
-    {
-        "id": "Ignis_vs_Havoc_1768780172",
-        "time": "1-я карта",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Ignis",
-        "team2": "Havoc",
-        "score": "6-13",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "11.0",
-            "x": "3.50",
-            "p2": "1.02"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Ignis_vs_Havoc_1768778821",
-        "time": "20-01-2026 02:45",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Ignis",
-        "team2": "Havoc",
-        "score": null,
-        "winner": null,
-        "map_num": null,
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
     }
 ];
 const TWITCH_CHANNELS = [
