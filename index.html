@@ -65,9 +65,31 @@
                 </div>
             </div> -->
 
-            <div class="status-indicator">
+            <!-- User Profile Area (Populated by JS) -->
+            <div id="user-profile-container" style="display: none;">
+                <div class="user-profile-card">
+                    <div class="profile-main">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Warrior" id="user-avatar"
+                            class="user-avatar" alt="Avatar">
+                        <div class="user-info">
+                            <span id="user-name" class="user-name">@Warrior</span>
+                            <div class="user-balance-row">
+                                <i class="fa-solid fa-wallet"></i>
+                                <span>Баланс: <span id="user-balance">0</span> руб.</span>
+                            </div>
+                        </div>
+                        <button id="logout-btn" class="logout-btn" title="Выйти">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Version/Updates Indicator (Replaces Online Status) -->
+            <div class="status-indicator" id="updates-trigger" style="cursor: pointer; margin-top: auto;">
                 <span class="status-dot"></span>
-                <span id="connection-status">Online</span>
+                <span id="connection-status" style="font-size: 12px; font-weight: 600; color: var(--text-muted);">v2.13
+                    (Обновления)</span>
             </div>
         </nav>
 
@@ -233,6 +255,24 @@
         </div>
     </div>
 
+    <!-- Updates Modal -->
+    <div id="updates-modal" class="modal-overlay">
+        <div class="modal-content updates-modal-content">
+            <button class="close-modal" id="close-updates"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <div class="modal-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h2>История обновлений</h2>
+                <p>Хронология развития и улучшения STATAGGG</p>
+
+                <div class="changelog-container" id="changelog-list">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- AUTH OVERLAY (Telegram Login) -->
     <div id="auth-overlay" class="auth-overlay" style="display: none;">
         <div class="auth-box">
@@ -254,7 +294,7 @@
     </div>
 
     <script src="js/data.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v=2.14"></script>
 </body>
 
 </html>

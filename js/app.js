@@ -18,18 +18,186 @@ function getNestedValue(obj, path) {
     return path.split('.').reduce((acc, part) => acc && acc[part], obj);
 }
 
+const VERSIONS_DATA = [
+    {
+        version: "v2.13",
+        date: "19-01-2026",
+        changes: ["Добавлен раздел 'История обновлений' на сайт", "Оптимизация производительности рендеринга"]
+    },
+    {
+        version: "v2.12",
+        date: "19-01-2026",
+        changes: ["Синхронизация аватарок из Telegram в реальном времени", "Улучшена стабильность в браузерах Chrome/Safari"]
+    },
+    {
+        version: "v2.11",
+        date: "19-01-2026",
+        changes: ["Личный кабинет в боковой панели", "Отображение @username и баланса", "Система выхода (Logout)"]
+    },
+    {
+        version: "v2.10",
+        date: "18-01-2026",
+        changes: ["Исправлен перенос сессии между браузерами", "Режим 'Open in Browser' теперь сохраняет вход"]
+    },
+    {
+        version: "v2.7 - v2.9",
+        date: "17-01-2026",
+        changes: ["Переход на Text-Only брендинг (в 10 раз быстрее)", "Добавлены Chat Actions ('печатает')", "Исправлены критические ошибки запуска"]
+    },
+    {
+        version: "v2.2 - v2.6",
+        date: "16-01-2026",
+        changes: ["Режим публичного доступа к Match-Center", "Новый дизайн с эффектом Glitch", "Оптимизация задержки команд (/start)"]
+    },
+    {
+        version: "v2.0",
+        date: "15-01-2026",
+        changes: ["Первая стабильная версия на VDS", "Система проверки подписки"]
+    }
+];
+
 function initApp() {
+    checkAuth(); // AUTH CHECK: Must be first
     updateClock();
     setInterval(updateClock, 1000);
 
     setupNavigation();
     setupMobileToggle();
     setupFilters(); // New Table Filter Logic
+    setupUpdatesModal(); // CHANGELOG logic
     // setupSidebarLeague(); // Removed as per user request
 
     // Default render
     renderDashboard();
     renderLiveSection();
+}
+
+function setupUpdatesModal() {
+    const trigger = document.getElementById('updates-trigger');
+    const modal = document.getElementById('updates-modal');
+    const closeBtn = document.getElementById('close-updates');
+    const list = document.getElementById('changelog-list');
+
+    if (!trigger || !modal || !list) return;
+
+    // Render list
+    list.innerHTML = VERSIONS_DATA.map(v => `
+        <div class="update-item">
+            <div class="update-header">
+                <span class="update-version">${v.version}</span>
+                <span class="update-date">${v.date}</span>
+            </div>
+            <div class="update-body">
+                <ul>
+                    ${v.changes.map(c => `<li>${c}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+    `).join('');
+
+    // Dynamic Version Label in Sidebar
+    const statusText = document.getElementById('connection-status');
+    if (statusText && VERSIONS_DATA.length > 0) {
+        statusText.textContent = `${VERSIONS_DATA[0].version} (Обновления)`;
+    }
+
+    // Events
+    trigger.onclick = () => {
+        modal.style.display = 'flex';
+        setTimeout(() => modal.classList.add('show'), 10);
+    };
+
+    const closeModal = () => {
+        modal.classList.remove('show');
+        setTimeout(() => modal.style.display = 'none', 300);
+    };
+
+    if (closeBtn) closeBtn.onclick = closeModal;
+
+    modal.onclick = (e) => {
+        if (e.target === modal) closeModal();
+    };
+}
+
+/* --- AUTHENTICATION --- */
+function checkAuth() {
+    const authOverlay = document.getElementById('auth-overlay');
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('auth_token');
+    const name = urlParams.get('name');
+    const username = urlParams.get('username');
+
+    // 1. Check if token comes from URL (Redirect from Bot)
+    if (token) {
+        // Save to local storage
+        localStorage.setItem('site_auth_token', token);
+        if (name) localStorage.setItem('user_name', name);
+        if (username) localStorage.setItem('user_handle', username);
+
+        // IMPORTANT: We DO NOT clean the URL here anymore.
+        // If the user uses Telegram's "Open in Browser" menu, 
+        // the token MUST still be in the URL to pass it to Chrome/Safari.
+
+        authOverlay.style.display = 'none';
+        renderUserProfile();
+        return;
+    }
+
+    // 2. Check Local Storage
+    const storedToken = localStorage.getItem('site_auth_token');
+    if (storedToken) {
+        authOverlay.style.display = 'none';
+        renderUserProfile();
+    } else {
+        authOverlay.style.display = 'flex'; // Block access
+        document.getElementById('user-profile-container').style.display = 'none';
+    }
+}
+
+function renderUserProfile() {
+    const container = document.getElementById('user-profile-container');
+    const nameEl = document.getElementById('user-name');
+    const avatarEl = document.getElementById('user-avatar');
+    const logoutBtn = document.getElementById('logout-btn');
+
+    const name = localStorage.getItem('user_name') || 'Warrior';
+    const handle = localStorage.getItem('user_handle') || '';
+
+    if (nameEl) {
+        nameEl.textContent = handle ? `@${handle}` : name;
+    }
+
+    if (avatarEl) {
+        // 📸 REAL TELEGRAM AVATAR INTEGRATION
+        // If user has a handle, we can pull their official TG photo
+        if (handle) {
+            const tgAvatarUrl = `https://t.me/i/userpic/320/${handle}.jpg`;
+            avatarEl.src = tgAvatarUrl;
+
+            // Fallback if TG photo is private or not found
+            avatarEl.onerror = () => {
+                const seed = handle || name || 'berserk';
+                avatarEl.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9`;
+            };
+        } else {
+            // Fallback for users without handles
+            const seed = name || 'berserk';
+            avatarEl.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}&backgroundColor=b6e3f4,c0aede,d1d4f9`;
+        }
+    }
+
+    if (logoutBtn) {
+        logoutBtn.onclick = () => {
+            if (confirm('Вы уверены, что хотите выйти?')) {
+                localStorage.clear();
+                window.location.reload();
+            }
+        };
+    }
+
+    if (container) {
+        container.style.display = 'block';
+    }
 }
 
 /* --- MOBILE TOGGLE --- */
@@ -273,6 +441,29 @@ function setupSidebarLeague() {
     });
 }
 
+// Helper to normalize league names (e.g. "1x1 Berserk League 2026 Week #4" -> "1x1 Berserk League")
+function normalizeLeagueName(name) {
+    if (!name) return "";
+    name = String(name).trim();
+
+    // 1. Merge "Berserk CS2 League" -> "1x1 Berserk League"
+    // Check case-insensitive
+    if (name.toLowerCase().includes("berserk cs2 league")) {
+        return "1x1 Berserk League";
+    }
+
+    // Remove "202x" (year), "Week #...", "Season #..." case insensitive
+    // Regex explanation:
+    // \s\d{4} -> space then 4 digits (year)
+    // \sWeek\s*#?\d+ -> space Week space? #? digits
+    // \sSeason\s*#?\d+ -> same for Season
+    return name
+        .replace(/\s\d{4}/gi, '')
+        .replace(/\sWeek\s*#?\d+/gi, '')
+        .replace(/\sSeason\s*#?\d+/gi, '')
+        .trim();
+}
+
 /* --- FILTERS (Table) --- */
 function setupFilters() {
     const triggers = document.querySelectorAll('.filter-trigger');
@@ -363,6 +554,10 @@ function toggleFilterDropdown(btn, col) {
     const safeHistory = (typeof MATCH_HISTORY !== 'undefined') ? MATCH_HISTORY : [];
     const valuesRaw = safeHistory.map(m => {
         const val = getNestedValue(m, col);
+        // Normalize if it's the league column
+        if (col === 'league') {
+            return val !== undefined ? normalizeLeagueName(val) : '-';
+        }
         return val !== undefined ? String(val).trim() : '-';
     });
     let values = [...new Set(valuesRaw)].sort();
@@ -420,19 +615,6 @@ function toggleFilterDropdown(btn, col) {
                     activeFilters[col].push(val);
                 }
                 applyFilters();
-                // Re-open/refresh this dropdown to show new state? 
-                // Or just close it? Usually filters stay open or apply immediately.
-                // Let's keep it consistent with previous UX: user clicks, it updates.
-                // Re-rendering the whole dropdown would be cleaner but complex here.
-                // Simple approach: apply filters and close dropdown for single select feel,
-                // OR just update visual state. 
-                // Given "click to select", often behaves like single select or needs manual close.
-                // Current implementation closed on "All/Reset", but kept open on checkbox.
-                // Let's update visual state manually here for better UX without full re-render.
-
-                // NOTE: User probably expects a single click to filter since they asked to remove checkboxes.
-                // But if multiple selections are allowed, we shouldn't close immediately.
-                // Let's update the item style immediately.
 
                 const newChecked = activeFilters[col].includes(val);
                 if (newChecked) {
@@ -488,7 +670,13 @@ function applyFilters() {
             // If matchValue is missing/undefined, default to '-'
             if (matchValue === undefined || matchValue === null) matchValue = '-';
 
-            if (!selectedValues.includes(matchValue.toString().trim())) return false; // Ensure comparison matches
+            // Normalize league name for comparison if filtering by league
+            if (col === 'league') {
+                const normVal = normalizeLeagueName(matchValue);
+                if (!selectedValues.includes(normVal)) return false;
+            } else {
+                if (!selectedValues.includes(matchValue.toString().trim())) return false; // Ensure comparison matches
+            }
         }
         return true;
     });
@@ -600,12 +788,18 @@ function renderDashboard(data = null) {
         const logo2 = match.logos ? match.logos.t2 : '';
 
         // Determine where to put the score based on map_num
-        const mapNum = match.map_num || 0;
-        let scoreCol1 = '-', scoreCol2 = '-', scoreCol3 = '-', mainScore = match.score;
+        let scoreCol1 = '-', scoreCol2 = '-', scoreCol3 = '-';
 
-        if (mapNum === 1) scoreCol1 = match.score;
-        if (mapNum === 2) scoreCol2 = match.score;
-        if (mapNum === 3) scoreCol3 = match.score;
+        if (match.map_scores) {
+            scoreCol1 = match.map_scores.map_1 || '-';
+            scoreCol2 = match.map_scores.map_2 || '-';
+            scoreCol3 = match.map_scores.map_3 || '-';
+        } else {
+            // Fallback for old data or if not present
+            const mapNum = match.map_num || 0;
+            if (mapNum === 1) scoreCol1 = match.score;
+            // Note: match.score is usually total score, so this fallback is weak, but keeps old behavior safe
+        }
 
         // --- SMART DATE FIX ---
         // If match.time contains "карта" or "Map", it's corrupted. Recover from ID.
