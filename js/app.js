@@ -18,6 +18,44 @@ function getNestedValue(obj, path) {
     return path.split('.').reduce((acc, part) => acc && acc[part], obj);
 }
 
+const VERSIONS_DATA = [
+    {
+        version: "v2.13",
+        date: "19-01-2026",
+        changes: ["Добавлен раздел 'История обновлений' на сайт", "Оптимизация производительности рендеринга"]
+    },
+    {
+        version: "v2.12",
+        date: "19-01-2026",
+        changes: ["Синхронизация аватарок из Telegram в реальном времени", "Улучшена стабильность в браузерах Chrome/Safari"]
+    },
+    {
+        version: "v2.11",
+        date: "19-01-2026",
+        changes: ["Личный кабинет в боковой панели", "Отображение @username и баланса", "Система выхода (Logout)"]
+    },
+    {
+        version: "v2.10",
+        date: "18-01-2026",
+        changes: ["Исправлен перенос сессии между браузерами", "Режим 'Open in Browser' теперь сохраняет вход"]
+    },
+    {
+        version: "v2.7 - v2.9",
+        date: "17-01-2026",
+        changes: ["Переход на Text-Only брендинг (в 10 раз быстрее)", "Добавлены Chat Actions ('печатает')", "Исправлены критические ошибки запуска"]
+    },
+    {
+        version: "v2.2 - v2.6",
+        date: "16-01-2026",
+        changes: ["Режим публичного доступа к Match-Center", "Новый дизайн с эффектом Glitch", "Оптимизация задержки команд (/start)"]
+    },
+    {
+        version: "v2.0",
+        date: "15-01-2026",
+        changes: ["Первая стабильная версия на VDS", "Система проверки подписки"]
+    }
+];
+
 function initApp() {
     checkAuth(); // AUTH CHECK: Must be first
     updateClock();
@@ -26,11 +64,53 @@ function initApp() {
     setupNavigation();
     setupMobileToggle();
     setupFilters(); // New Table Filter Logic
+    setupUpdatesModal(); // CHANGELOG logic
     // setupSidebarLeague(); // Removed as per user request
 
     // Default render
     renderDashboard();
     renderLiveSection();
+}
+
+function setupUpdatesModal() {
+    const trigger = document.getElementById('updates-trigger');
+    const modal = document.getElementById('updates-modal');
+    const closeBtn = document.getElementById('close-updates');
+    const list = document.getElementById('changelog-list');
+
+    if (!trigger || !modal || !list) return;
+
+    // Render list
+    list.innerHTML = VERSIONS_DATA.map(v => `
+        <div class="update-item">
+            <div class="update-header">
+                <span class="update-version">${v.version}</span>
+                <span class="update-date">${v.date}</span>
+            </div>
+            <div class="update-body">
+                <ul>
+                    ${v.changes.map(c => `<li>${c}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+    `).join('');
+
+    // Events
+    trigger.onclick = () => {
+        modal.style.display = 'flex';
+        setTimeout(() => modal.classList.add('show'), 10);
+    };
+
+    const closeModal = () => {
+        modal.classList.remove('show');
+        setTimeout(() => modal.style.display = 'none', 300);
+    };
+
+    if (closeBtn) closeBtn.onclick = closeModal;
+
+    modal.onclick = (e) => {
+        if (e.target === modal) closeModal();
+    };
 }
 
 /* --- AUTHENTICATION --- */
