@@ -51,11 +51,6 @@
                     <i class="fa-solid fa-chart-pie"></i>
                     <span>Аналитика</span>
                 </li>
-                <li class="nav-item" id="updates-trigger">
-                    <i class="fa-solid fa-rocket"></i>
-                    <span>Обновления</span>
-                    <span class="nav-badge">NEW</span>
-                </li>
             </ul>
 
             <!-- League Selector removed as per user request (17-01-2026) -->
@@ -90,9 +85,11 @@
                 </div>
             </div>
 
-            <div class="status-indicator">
+            <!-- Version/Updates Indicator (Replaces Online Status) -->
+            <div class="status-indicator" id="updates-trigger" style="cursor: pointer; margin-top: auto;">
                 <span class="status-dot"></span>
-                <span id="connection-status">Online</span>
+                <span id="connection-status" style="font-size: 12px; font-weight: 600; color: var(--text-muted);">v2.13
+                    (Обновления)</span>
             </div>
         </nav>
 
