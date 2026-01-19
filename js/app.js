@@ -788,12 +788,18 @@ function renderDashboard(data = null) {
         const logo2 = match.logos ? match.logos.t2 : '';
 
         // Determine where to put the score based on map_num
-        const mapNum = match.map_num || 0;
-        let scoreCol1 = '-', scoreCol2 = '-', scoreCol3 = '-', mainScore = match.score;
+        let scoreCol1 = '-', scoreCol2 = '-', scoreCol3 = '-';
 
-        if (mapNum === 1) scoreCol1 = match.score;
-        if (mapNum === 2) scoreCol2 = match.score;
-        if (mapNum === 3) scoreCol3 = match.score;
+        if (match.map_scores) {
+            scoreCol1 = match.map_scores.map_1 || '-';
+            scoreCol2 = match.map_scores.map_2 || '-';
+            scoreCol3 = match.map_scores.map_3 || '-';
+        } else {
+            // Fallback for old data or if not present
+            const mapNum = match.map_num || 0;
+            if (mapNum === 1) scoreCol1 = match.score;
+            // Note: match.score is usually total score, so this fallback is weak, but keeps old behavior safe
+        }
 
         // --- SMART DATE FIX ---
         // If match.time contains "карта" or "Map", it's corrupted. Recover from ID.
