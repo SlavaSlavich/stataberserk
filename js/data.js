@@ -1,5 +1,24 @@
 
-const LIVE_MATCHES = [];
+const LIVE_MATCHES = [
+    {
+        "id": "Phantom_vs_Evoker",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Phantom",
+        "team2": "Evoker",
+        "score": "2-5",
+        "status": "LIVE",
+        "time": "1-я карта",
+        "odds": {
+            "p1": "2.35",
+            "x": "3.50",
+            "p2": "1.52"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    }
+];
 const MATCH_HISTORY = [
     {
         "id": "Phantom_vs_Evoker_1768835776",
