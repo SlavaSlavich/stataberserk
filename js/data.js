@@ -19,30 +19,12 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "Vortex_vs_Phantom",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Vortex",
-        "team2": "Phantom",
-        "score": "13-9",
-        "status": "LIVE",
-        "time": "20.01 01:28",
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Phantom_vs_Evoker",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "20.01 01:37",
         "odds": {
             "p1": null,
@@ -56,6 +38,26 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Vortex_vs_Phantom_1768862165",
+        "time": "20.01 01:28",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Vortex",
+        "team2": "Phantom",
+        "score": "13-9",
+        "winner": "team1",
+        "map_num": 1,
+        "map_scores": {},
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Vortex_vs_Evoker_1768861577",
         "time": "20.01 01:19",
