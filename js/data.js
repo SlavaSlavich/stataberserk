@@ -19,30 +19,12 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "Vortex_vs_Phantom",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Vortex",
-        "team2": "Phantom",
-        "score": "7-13",
-        "status": "LIVE",
-        "time": "19.01 21:35",
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Phantom_vs_Evoker",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "19.01 21:44",
         "odds": {
             "p1": null,
@@ -56,6 +38,26 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Vortex_vs_Phantom_1768848218",
+        "time": "19.01 21:35",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Vortex",
+        "team2": "Phantom",
+        "score": "7-13",
+        "winner": "team2",
+        "map_num": 1,
+        "map_scores": {},
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Vortex_vs_Evoker_1768847837",
         "time": "19.01 21:26",
@@ -1050,26 +1052,6 @@ const MATCH_HISTORY = [
             "p1": "1.52",
             "x": "3.50",
             "p2": "2.35"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Glare_vs_Lancer_1768811923",
-        "time": "19.01 11:30",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Glare",
-        "team2": "Lancer",
-        "score": "11-9",
-        "winner": "team1",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": "1.9",
-            "x": "3.50",
-            "p2": "1.8"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
