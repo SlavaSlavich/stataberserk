@@ -1,5 +1,24 @@
 
-const LIVE_MATCHES = [];
+const LIVE_MATCHES = [
+    {
+        "id": "Vortex_vs_Evoker",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Vortex",
+        "team2": "Evoker",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "Скоро",
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    }
+];
 const MATCH_HISTORY = [
     {
         "id": "Glare_vs_Lancer_1768826444",
@@ -63,7 +82,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768822020",
-        "time": "19-01-2026 14:38",
+        "time": "19.01 11:38",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -83,7 +102,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768822020",
-        "time": "19-01-2026 14:29",
+        "time": "19.01 11:29",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -103,7 +122,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768821995",
-        "time": "19-01-2026 14:20",
+        "time": "19.01 11:20",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -123,7 +142,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768821501",
-        "time": "19-01-2026 14:11",
+        "time": "19.01 11:11",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -143,7 +162,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768820976",
-        "time": "19-01-2026 14:02",
+        "time": "19.01 11:02",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -163,7 +182,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768820398",
-        "time": "19-01-2026 13:53",
+        "time": "19.01 10:53",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -183,7 +202,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768819918",
-        "time": "19-01-2026 13:44",
+        "time": "19.01 10:44",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -203,7 +222,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768819280",
-        "time": "19-01-2026 13:35",
+        "time": "19.01 10:35",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -223,7 +242,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768818829",
-        "time": "19-01-2026 13:26",
+        "time": "19.01 10:26",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -243,7 +262,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768818444",
-        "time": "19-01-2026 13:17",
+        "time": "19.01 10:17",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -263,7 +282,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768818339",
-        "time": "19-01-2026 13:17",
+        "time": "19.01 10:17",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -283,7 +302,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768818151",
-        "time": "19-01-2026 13:08",
+        "time": "19.01 10:08",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -303,7 +322,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768817566",
-        "time": "19-01-2026 12:59",
+        "time": "19.01 09:59",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -323,7 +342,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768816720",
-        "time": "19-01-2026 12:50",
+        "time": "19.01 09:50",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -343,7 +362,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768815233",
-        "time": "19-01-2026 12:24",
+        "time": "19.01 09:24",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -363,7 +382,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768814977",
-        "time": "19-01-2026 12:15",
+        "time": "19.01 09:15",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -383,7 +402,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768814432",
-        "time": "19-01-2026 12:06",
+        "time": "19.01 09:06",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -403,7 +422,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768813834",
-        "time": "19-01-2026 11:57",
+        "time": "19.01 08:57",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -423,7 +442,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768813333",
-        "time": "19-01-2026 11:48",
+        "time": "19.01 08:48",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -443,7 +462,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768812517",
-        "time": "19-01-2026 11:39",
+        "time": "19.01 08:39",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -463,7 +482,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768811923",
-        "time": "19-01-2026 11:30",
+        "time": "19.01 08:30",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -483,7 +502,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768811383",
-        "time": "19-01-2026 11:21",
+        "time": "19.01 08:21",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -503,7 +522,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768810849",
-        "time": "19-01-2026 11:12",
+        "time": "19.01 08:12",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -523,7 +542,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768810417",
-        "time": "19-01-2026 11:03",
+        "time": "19.01 08:03",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -543,7 +562,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768809773",
-        "time": "19-01-2026 10:54",
+        "time": "19.01 07:54",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -563,7 +582,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768809278",
-        "time": "19-01-2026 10:45",
+        "time": "19.01 07:45",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -583,7 +602,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768808680",
-        "time": "19-01-2026 10:36",
+        "time": "19.01 07:36",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -603,7 +622,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768808191",
-        "time": "19-01-2026 10:27",
+        "time": "19.01 07:27",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -623,7 +642,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768807554",
-        "time": "19-01-2026 10:18",
+        "time": "19.01 07:18",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -643,7 +662,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768807126",
-        "time": "19-01-2026 10:09",
+        "time": "19.01 07:09",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -663,7 +682,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768806488",
-        "time": "19-01-2026 10:00",
+        "time": "19.01 07:00",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -683,7 +702,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768805644",
-        "time": "19-01-2026 09:46",
+        "time": "19.01 06:46",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -703,7 +722,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768804370",
-        "time": "19-01-2026 09:28",
+        "time": "19.01 06:28",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -723,7 +742,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768803846",
-        "time": "19-01-2026 09:19",
+        "time": "19.01 06:19",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -743,7 +762,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768803275",
-        "time": "19-01-2026 09:10",
+        "time": "19.01 06:10",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -763,7 +782,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768802748",
-        "time": "19-01-2026 09:01",
+        "time": "19.01 06:01",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -783,7 +802,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768801762",
-        "time": "19-01-2026 08:43",
+        "time": "19.01 05:43",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -803,7 +822,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768801132",
-        "time": "19-01-2026 08:34",
+        "time": "19.01 05:34",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -823,7 +842,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768800565",
-        "time": "19-01-2026 08:25",
+        "time": "19.01 05:25",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -843,7 +862,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768800039",
-        "time": "19-01-2026 08:16",
+        "time": "19.01 05:16",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -863,7 +882,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768799015",
-        "time": "19-01-2026 07:58",
+        "time": "19.01 04:58",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -883,7 +902,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768798441",
-        "time": "19-01-2026 07:49",
+        "time": "19.01 04:49",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -903,7 +922,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768798071",
-        "time": "19-01-2026 07:40",
+        "time": "19.01 04:40",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -923,7 +942,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Ignis_vs_Havoc_1768797333",
-        "time": "19-01-2026 07:31",
+        "time": "19.01 04:31",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
@@ -943,7 +962,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Havoc_vs_Ignis_1768795964",
-        "time": "19-01-2026 07:05",
+        "time": "19.01 04:05",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Havoc",
         "team2": "Ignis",
@@ -963,7 +982,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Havoc_vs_Ignis_1768794854",
-        "time": "19-01-2026 06:47",
+        "time": "19.01 03:47",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Havoc",
         "team2": "Ignis",
@@ -983,52 +1002,12 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Havoc_vs_Ignis_1768794431",
-        "time": "19-01-2026 06:38",
+        "time": "19.01 03:38",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Havoc",
         "team2": "Ignis",
         "score": "19-21",
         "winner": "team2",
-        "map_num": null,
-        "map_scores": {},
-        "odds": {
-            "p1": "1.52",
-            "x": "3.50",
-            "p2": "2.35"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768793814",
-        "time": "19-01-2026 06:29",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "13-11",
-        "winner": "team1",
-        "map_num": null,
-        "map_scores": {},
-        "odds": {
-            "p1": "1.52",
-            "x": "3.50",
-            "p2": "2.35"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768793395",
-        "time": "19-01-2026 06:20",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "22-20",
-        "winner": "team1",
         "map_num": null,
         "map_scores": {},
         "odds": {
