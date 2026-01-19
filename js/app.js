@@ -95,6 +95,12 @@ function setupUpdatesModal() {
         </div>
     `).join('');
 
+    // Dynamic Version Label in Sidebar
+    const statusText = document.getElementById('connection-status');
+    if (statusText && VERSIONS_DATA.length > 0) {
+        statusText.textContent = `${VERSIONS_DATA[0].version} (Обновления)`;
+    }
+
     // Events
     trigger.onclick = () => {
         modal.style.display = 'flex';
