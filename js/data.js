@@ -1,13 +1,53 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Phantom_vs_Evoker",
+        "id": "33_vs_FB Team",
+        "league": "1x1 Berserk League",
+        "team1": "33",
+        "team2": "FB Team",
+        "score": "33-4",
+        "status": "LIVE",
+        "time": "1-я карта",
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Team UNiTY_vs_Fingers Crossed",
+        "league": "1x1 Berserk League",
+        "team1": "Team UNiTY",
+        "team2": "Fingers Crossed",
+        "score": "5-7",
+        "status": "LIVE",
+        "time": "2-я карта",
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    }
+];
+const MATCH_HISTORY = [
+    {
+        "id": "Phantom_vs_Evoker_1768836352",
+        "time": "1-я карта",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
         "score": "2-5",
-        "status": "LIVE",
-        "time": "1-я карта",
+        "winner": "team2",
+        "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -17,9 +57,7 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Phantom_vs_Evoker_1768835776",
         "time": "Скоро",
@@ -1014,26 +1052,6 @@ const MATCH_HISTORY = [
             "p1": "2.35",
             "x": "3.50",
             "p2": "1.52"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768795964",
-        "time": "19.01 04:05",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "10-7",
-        "winner": "team1",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": "1.55",
-            "x": "3.50",
-            "p2": "2.3"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
