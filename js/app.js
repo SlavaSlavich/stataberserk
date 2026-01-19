@@ -445,6 +445,13 @@ function setupSidebarLeague() {
 function normalizeLeagueName(name) {
     if (!name) return "";
     name = String(name).trim();
+
+    // 1. Merge "Berserk CS2 League" -> "1x1 Berserk League"
+    // Check case-insensitive
+    if (name.toLowerCase().includes("berserk cs2 league")) {
+        return "1x1 Berserk League";
+    }
+
     // Remove "202x" (year), "Week #...", "Season #..." case insensitive
     // Regex explanation:
     // \s\d{4} -> space then 4 digits (year)
