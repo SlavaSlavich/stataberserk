@@ -35,6 +35,42 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
+    },
+    {
+        "id": "Pcific Esports_vs_JUMBO TEAM",
+        "league": "1x1 Berserk League",
+        "team1": "Pcific Esports",
+        "team2": "JUMBO TEAM",
+        "score": "0-0",
+        "status": "LIVE",
+        "time": "3-я карта",
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Satriales_vs_HereWeGoAgain",
+        "league": "1x1 Berserk League",
+        "team1": "Satriales",
+        "team2": "HereWeGoAgain",
+        "score": "6-8",
+        "status": "LIVE",
+        "time": "1-я карта",
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
     }
 ];
 const MATCH_HISTORY = [
