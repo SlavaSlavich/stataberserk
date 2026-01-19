@@ -1,5 +1,24 @@
 
-const LIVE_MATCHES = [];
+const LIVE_MATCHES = [
+    {
+        "id": "Lancer_vs_Flux",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Lancer",
+        "team2": "Flux",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "Скоро",
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    }
+];
 const MATCH_HISTORY = [
     {
         "id": "Lancer_vs_Flux_1768822020",
@@ -10,6 +29,7 @@ const MATCH_HISTORY = [
         "score": null,
         "winner": null,
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.65",
             "x": "3.50",
@@ -29,6 +49,7 @@ const MATCH_HISTORY = [
         "score": null,
         "winner": null,
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.75",
             "x": "3.50",
@@ -48,6 +69,7 @@ const MATCH_HISTORY = [
         "score": "12-11",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.78",
             "x": "3.50",
@@ -67,6 +89,7 @@ const MATCH_HISTORY = [
         "score": "13-10",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.65",
             "x": "3.50",
@@ -86,6 +109,7 @@ const MATCH_HISTORY = [
         "score": "11-13",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.68",
             "x": "3.50",
@@ -105,6 +129,7 @@ const MATCH_HISTORY = [
         "score": "12-5",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.82",
             "x": "3.50",
@@ -124,6 +149,7 @@ const MATCH_HISTORY = [
         "score": "12-9",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.65",
             "x": "3.50",
@@ -143,6 +169,7 @@ const MATCH_HISTORY = [
         "score": "5-11",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.68",
             "x": "3.50",
@@ -162,6 +189,7 @@ const MATCH_HISTORY = [
         "score": "5-13",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.75",
             "x": "3.50",
@@ -181,6 +209,7 @@ const MATCH_HISTORY = [
         "score": "12-10",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.75",
             "x": "3.50",
@@ -200,6 +229,7 @@ const MATCH_HISTORY = [
         "score": "12-10",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.75",
             "x": "3.50",
@@ -219,6 +249,7 @@ const MATCH_HISTORY = [
         "score": "13-10",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.75",
             "x": "3.50",
@@ -238,6 +269,7 @@ const MATCH_HISTORY = [
         "score": "12-8",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.75",
             "x": "3.50",
@@ -257,6 +289,7 @@ const MATCH_HISTORY = [
         "score": "6-9",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.65",
             "x": "3.50",
@@ -276,6 +309,7 @@ const MATCH_HISTORY = [
         "score": null,
         "winner": null,
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.8",
             "x": "3.50",
@@ -295,6 +329,7 @@ const MATCH_HISTORY = [
         "score": "13-11",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.75",
             "x": "3.50",
@@ -314,6 +349,7 @@ const MATCH_HISTORY = [
         "score": "8-10",
         "winner": "team2",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.55",
             "x": "3.50",
@@ -333,6 +369,7 @@ const MATCH_HISTORY = [
         "score": "13-11",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.9",
             "x": "3.50",
@@ -352,6 +389,7 @@ const MATCH_HISTORY = [
         "score": "10-12",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.75",
             "x": "3.50",
@@ -371,6 +409,7 @@ const MATCH_HISTORY = [
         "score": "9-13",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -390,6 +429,7 @@ const MATCH_HISTORY = [
         "score": "11-9",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.9",
             "x": "3.50",
@@ -409,6 +449,7 @@ const MATCH_HISTORY = [
         "score": "10-13",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.72",
             "x": "3.50",
@@ -428,6 +469,7 @@ const MATCH_HISTORY = [
         "score": "13-8",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.55",
             "x": "3.50",
@@ -447,6 +489,7 @@ const MATCH_HISTORY = [
         "score": "15-13",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.95",
             "x": "3.50",
@@ -466,6 +509,7 @@ const MATCH_HISTORY = [
         "score": "13-10",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.78",
             "x": "3.50",
@@ -485,6 +529,7 @@ const MATCH_HISTORY = [
         "score": "13-11",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.55",
             "x": "3.50",
@@ -504,6 +549,7 @@ const MATCH_HISTORY = [
         "score": "13-5",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "2.05",
             "x": "3.50",
@@ -523,6 +569,7 @@ const MATCH_HISTORY = [
         "score": "13-7",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.85",
             "x": "3.50",
@@ -542,6 +589,7 @@ const MATCH_HISTORY = [
         "score": "7-12",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.55",
             "x": "3.50",
@@ -561,6 +609,7 @@ const MATCH_HISTORY = [
         "score": "3-11",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "2.0",
             "x": "3.50",
@@ -580,6 +629,7 @@ const MATCH_HISTORY = [
         "score": "13-8",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.85",
             "x": "3.50",
@@ -599,6 +649,7 @@ const MATCH_HISTORY = [
         "score": "8-12",
         "winner": "team2",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -618,6 +669,7 @@ const MATCH_HISTORY = [
         "score": "11-11",
         "winner": null,
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -637,6 +689,7 @@ const MATCH_HISTORY = [
         "score": "10-13",
         "winner": "team2",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -656,6 +709,7 @@ const MATCH_HISTORY = [
         "score": "12-7",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -675,6 +729,7 @@ const MATCH_HISTORY = [
         "score": "12-7",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -694,6 +749,7 @@ const MATCH_HISTORY = [
         "score": "13-15",
         "winner": "team2",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -713,6 +769,7 @@ const MATCH_HISTORY = [
         "score": "13-7",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": null,
             "x": "3.50",
@@ -732,6 +789,7 @@ const MATCH_HISTORY = [
         "score": "13-5",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -751,6 +809,7 @@ const MATCH_HISTORY = [
         "score": "7-12",
         "winner": "team2",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -770,6 +829,7 @@ const MATCH_HISTORY = [
         "score": "11-13",
         "winner": "team2",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -789,6 +849,7 @@ const MATCH_HISTORY = [
         "score": "13-7",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": null,
             "x": "3.50",
@@ -808,6 +869,7 @@ const MATCH_HISTORY = [
         "score": "14-16",
         "winner": "team2",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -827,6 +889,7 @@ const MATCH_HISTORY = [
         "score": "7-11",
         "winner": "team2",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "2.35",
             "x": "3.50",
@@ -846,6 +909,7 @@ const MATCH_HISTORY = [
         "score": "10-7",
         "winner": "team1",
         "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "1.55",
             "x": "3.50",
@@ -865,6 +929,7 @@ const MATCH_HISTORY = [
         "score": "13-6",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -884,6 +949,7 @@ const MATCH_HISTORY = [
         "score": "19-21",
         "winner": "team2",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -903,6 +969,7 @@ const MATCH_HISTORY = [
         "score": "13-11",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -922,6 +989,7 @@ const MATCH_HISTORY = [
         "score": "22-20",
         "winner": "team1",
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.52",
             "x": "3.50",
@@ -941,124 +1009,11 @@ const MATCH_HISTORY = [
         "score": "11-11",
         "winner": null,
         "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": null,
             "x": "3.50",
             "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768791455",
-        "time": "19-01-2026 05:53",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "8-12",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "1.52",
-            "x": "3.50",
-            "p2": "2.35"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768790945",
-        "time": "19-01-2026 05:44",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "13-11",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.55",
-            "x": "3.50",
-            "p2": "2.3"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768790396",
-        "time": "19-01-2026 05:35",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "13-6",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": "1.55",
-            "x": "3.50",
-            "p2": "2.3"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768789313",
-        "time": "19-01-2026 05:17",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "11-11",
-        "winner": null,
-        "map_num": null,
-        "odds": {
-            "p1": "1.55",
-            "x": "3.50",
-            "p2": "2.3"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768788762",
-        "time": "19-01-2026 05:08",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "13-5",
-        "winner": "team1",
-        "map_num": null,
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Ignis_1768788169",
-        "time": "19-01-2026 04:59",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Ignis",
-        "score": "4-11",
-        "winner": "team2",
-        "map_num": null,
-        "odds": {
-            "p1": "1.52",
-            "x": "3.50",
-            "p2": "2.35"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
