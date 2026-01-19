@@ -441,6 +441,22 @@ function setupSidebarLeague() {
     });
 }
 
+// Helper to normalize league names (e.g. "1x1 Berserk League 2026 Week #4" -> "1x1 Berserk League")
+function normalizeLeagueName(name) {
+    if (!name) return "";
+    name = String(name).trim();
+    // Remove "202x" (year), "Week #...", "Season #..." case insensitive
+    // Regex explanation:
+    // \s\d{4} -> space then 4 digits (year)
+    // \sWeek\s*#?\d+ -> space Week space? #? digits
+    // \sSeason\s*#?\d+ -> same for Season
+    return name
+        .replace(/\s\d{4}/gi, '')
+        .replace(/\sWeek\s*#?\d+/gi, '')
+        .replace(/\sSeason\s*#?\d+/gi, '')
+        .trim();
+}
+
 /* --- FILTERS (Table) --- */
 function setupFilters() {
     const triggers = document.querySelectorAll('.filter-trigger');
@@ -531,6 +547,10 @@ function toggleFilterDropdown(btn, col) {
     const safeHistory = (typeof MATCH_HISTORY !== 'undefined') ? MATCH_HISTORY : [];
     const valuesRaw = safeHistory.map(m => {
         const val = getNestedValue(m, col);
+        // Normalize if it's the league column
+        if (col === 'league') {
+            return val !== undefined ? normalizeLeagueName(val) : '-';
+        }
         return val !== undefined ? String(val).trim() : '-';
     });
     let values = [...new Set(valuesRaw)].sort();
@@ -588,19 +608,6 @@ function toggleFilterDropdown(btn, col) {
                     activeFilters[col].push(val);
                 }
                 applyFilters();
-                // Re-open/refresh this dropdown to show new state? 
-                // Or just close it? Usually filters stay open or apply immediately.
-                // Let's keep it consistent with previous UX: user clicks, it updates.
-                // Re-rendering the whole dropdown would be cleaner but complex here.
-                // Simple approach: apply filters and close dropdown for single select feel,
-                // OR just update visual state. 
-                // Given "click to select", often behaves like single select or needs manual close.
-                // Current implementation closed on "All/Reset", but kept open on checkbox.
-                // Let's update visual state manually here for better UX without full re-render.
-
-                // NOTE: User probably expects a single click to filter since they asked to remove checkboxes.
-                // But if multiple selections are allowed, we shouldn't close immediately.
-                // Let's update the item style immediately.
 
                 const newChecked = activeFilters[col].includes(val);
                 if (newChecked) {
@@ -656,7 +663,13 @@ function applyFilters() {
             // If matchValue is missing/undefined, default to '-'
             if (matchValue === undefined || matchValue === null) matchValue = '-';
 
-            if (!selectedValues.includes(matchValue.toString().trim())) return false; // Ensure comparison matches
+            // Normalize league name for comparison if filtering by league
+            if (col === 'league') {
+                const normVal = normalizeLeagueName(matchValue);
+                if (!selectedValues.includes(normVal)) return false;
+            } else {
+                if (!selectedValues.includes(matchValue.toString().trim())) return false; // Ensure comparison matches
+            }
         }
         return true;
     });
