@@ -1,24 +1,6 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Glare_vs_Flux",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Glare",
-        "team2": "Flux",
-        "score": "10-13",
-        "status": "LIVE",
-        "time": "19-01-2026 11:21",
-        "odds": {
-            "p1": "1.72",
-            "x": "3.50",
-            "p2": "2.0"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Glare_vs_Lancer",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
@@ -56,6 +38,25 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Glare_vs_Flux_1768811383",
+        "time": "19-01-2026 11:21",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Glare",
+        "team2": "Flux",
+        "score": "10-13",
+        "winner": "team2",
+        "map_num": 1,
+        "odds": {
+            "p1": "1.72",
+            "x": "3.50",
+            "p2": "2.0"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Lancer_vs_Flux_1768810849",
         "time": "19-01-2026 11:12",
