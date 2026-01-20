@@ -23,7 +23,7 @@ const LIVE_MATCHES = [
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Vortex",
-        "score": "0-0",
+        "score": "2-2",
         "status": "LIVE",
         "time": "20.01 18:54",
         "odds": {
@@ -1112,7 +1112,7 @@ const TWITCH_CHANNELS = [
     },
     {
         "name": "CS2 Eternity League",
-        "channel": "eternity_league1, eternity_league2",
+        "channel": "eternity_league1",
         "category": "Counter Strike 2",
         "icon": "fa-solid fa-tv"
     }
