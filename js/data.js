@@ -17,15 +17,19 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    },
+    }
+];
+const MATCH_HISTORY = [
     {
-        "id": "Lancer_vs_Glare",
+        "id": "Lancer_vs_Glare_1768912775",
+        "time": "Скоро",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Glare",
         "score": "10-13",
-        "status": "LIVE",
-        "time": "Скоро",
+        "winner": "team2",
+        "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.88",
             "x": "3.50",
@@ -35,9 +39,7 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Flux_vs_Glare_1768912489",
         "time": "Скоро",
