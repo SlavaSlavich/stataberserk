@@ -1002,4 +1002,11 @@ const MATCH_HISTORY = [
         }
     }
 ];
-const TWITCH_CHANNELS = [];
+const TWITCH_CHANNELS = [
+    {
+        "name": "1x1 CS2 Berserk League",
+        "channel": "berserk_cs2_league",
+        "category": "Counter Strike 2",
+        "icon": "fa-solid fa-tv"
+    }
+];
