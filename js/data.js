@@ -1002,10 +1002,4 @@ const MATCH_HISTORY = [
         }
     }
 ];
-const TWITCH_CHANNELS = [
-    {
-        "name": "Mobile Legends",
-        "channel": "ecs_tv",
-        "icon": "fa-solid fa-mobile-screen"
-    }
-];
+const TWITCH_CHANNELS = [];
