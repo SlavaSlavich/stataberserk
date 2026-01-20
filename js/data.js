@@ -1,24 +1,6 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Phantom_vs_Vortex",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Phantom",
-        "team2": "Vortex",
-        "score": "13-11",
-        "status": "LIVE",
-        "time": "21.01 01:46",
-        "odds": {
-            "p1": "1.4",
-            "x": "3.50",
-            "p2": "2.7"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Ignis_vs_Havoc",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
@@ -1930,6 +1912,26 @@ const MATCH_HISTORY = [
             "p1": "2.05",
             "x": "3.50",
             "p2": "1.68"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Phantom_vs_Vortex_1768949679",
+        "time": "21.01 01:46",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Phantom",
+        "team2": "Vortex",
+        "score": "13-11",
+        "winner": "team1",
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.4",
+            "x": "3.50",
+            "p2": "2.7"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
