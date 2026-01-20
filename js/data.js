@@ -1036,7 +1036,7 @@ const TWITCH_CHANNELS = [
     },
     {
         "name": "CS2 Eternity League",
-        "channel": "eternity_league1",
+        "channel": "eternity_league1, eternity_league2",
         "category": "Counter Strike 2",
         "icon": "fa-solid fa-tv"
     }
