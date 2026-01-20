@@ -9,9 +9,9 @@ const LIVE_MATCHES = [
         "status": "Coming Soon",
         "time": "20.01 22:02",
         "odds": {
-            "p1": null,
+            "p1": "1.4",
             "x": "3.50",
-            "p2": null
+            "p2": "2.7"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
@@ -1460,7 +1460,7 @@ const MATCH_HISTORY = [
 const TWITCH_CHANNELS = [
     {
         "name": "Eternity League",
-        "channel": "eternity_league1, eternity_league2",
+        "channel": "eternity_league2",
         "category": "Counter Strike 2",
         "icon": "fa-solid fa-tv"
     }
