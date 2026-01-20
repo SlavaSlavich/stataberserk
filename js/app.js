@@ -227,12 +227,31 @@ function setupNavigation() {
     // 0. GENERATE SUBMENU FROM DATA
     if (submenu && typeof TWITCH_CHANNELS !== 'undefined' && TWITCH_CHANNELS.length > 0) {
         submenu.innerHTML = '';
-        TWITCH_CHANNELS.forEach(channel => {
-            const li = document.createElement('li');
-            li.className = 'submenu-item';
-            li.dataset.channel = channel.channel;
-            li.innerHTML = `<i class="${channel.icon || 'fa-solid fa-gamepad'}"></i> ${channel.name}`;
-            submenu.appendChild(li);
+
+        // Group by category
+        const groups = {};
+        TWITCH_CHANNELS.forEach(ch => {
+            const cat = ch.category || 'Другое';
+            if (!groups[cat]) groups[cat] = [];
+            groups[cat].push(ch);
+        });
+
+        // Render groups
+        Object.keys(groups).forEach(cat => {
+            // Header
+            const header = document.createElement('li');
+            header.style.cssText = 'padding: 8px 15px; font-size: 11px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px; margin-top: 5px; cursor: default; pointer-events: none;';
+            header.textContent = cat;
+            submenu.appendChild(header);
+
+            // Channels
+            groups[cat].forEach(channel => {
+                const li = document.createElement('li');
+                li.className = 'submenu-item';
+                li.dataset.channel = channel.channel;
+                li.innerHTML = `<i class="${channel.icon || 'fa-solid fa-gamepad'}"></i> ${channel.name}`;
+                submenu.appendChild(li);
+            });
         });
     }
 
