@@ -9,9 +9,9 @@ const LIVE_MATCHES = [
         "status": "Coming Soon",
         "time": "20.01 10:36",
         "odds": {
-            "p1": null,
+            "p1": "1.62",
             "x": "3.50",
-            "p2": null
+            "p2": "2.15"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
@@ -24,7 +24,7 @@ const LIVE_MATCHES = [
         "team1": "Lancer",
         "team2": "Glare",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "20.01 10:27",
         "odds": {
             "p1": "1.78",
