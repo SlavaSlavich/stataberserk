@@ -1625,5 +1625,11 @@ const TWITCH_CHANNELS = [
         "channel": "eternity_league2, eternity_league1",
         "category": "Counter Strike 2",
         "icon": "fa-solid fa-tv"
+    },
+    {
+        "name": "CS2 Ultras League",
+        "channel": "cyberheatmedia",
+        "category": "Counter Strike 2",
+        "icon": "fa-solid fa-tv"
     }
 ];
