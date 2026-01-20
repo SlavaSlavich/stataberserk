@@ -1623,182 +1623,51 @@ body {
     margin-bottom: 0;
     margin-top: 20px;
     opacity: 0.5;
-}
- 
- / *   - - -   S T R E A M   G R I D   S Y S T E M   - - -   * / 
- 
- . l i v e - g r i d - c o n t a i n e r   { 
- 
-         w i d t h :   1 0 0 % ; 
- 
-         h e i g h t :   c a l c ( 1 0 0 v h   -   1 4 0 p x ) ;   / *   F i l l   r e m a i n i n g   h e i g h t   m i n u s   h e a d e r   * / 
- 
-         m i n _ h e i g h t :   4 0 0 p x ; 
- 
-         p a d d i n g :   1 0 p x   0 ; 
- 
- } 
- 
- 
- 
- . v i d e o - c o n t a i n e r   { 
- 
-         w i d t h :   1 0 0 % ; 
- 
-         h e i g h t :   1 0 0 % ; 
- 
-         d i s p l a y :   g r i d ; 
- 
-         g a p :   1 5 p x ; 
- 
-         / *   D e f a u l t   t o   s i n g l e   v i e w ,   o v e r r i d d e n   b y   J S   o r   m o d i f i e r   c l a s s e s   * / 
- 
-         g r i d - t e m p l a t e - c o l u m n s :   1 f r ;   
- 
- } 
- 
- 
- 
- / *   M o d i f i e r s   f o r   J S   t o   t o g g l e   * / 
- 
- . g r i d - l a y o u t - 1   {   g r i d - t e m p l a t e - c o l u m n s :   1 f r ;   } 
- 
- . g r i d - l a y o u t - 2   {   g r i d - t e m p l a t e - c o l u m n s :   1 f r   1 f r ;   } 
- 
- . g r i d - l a y o u t - 3   {   g r i d - t e m p l a t e - c o l u m n s :   1 f r   1 f r ;   g r i d - t e m p l a t e - r o w s :   1 f r   1 f r ;   } 
- 
- . g r i d - l a y o u t - 4   {   g r i d - t e m p l a t e - c o l u m n s :   1 f r   1 f r ;   g r i d - t e m p l a t e - r o w s :   1 f r   1 f r ;   } 
- 
- 
- 
- . m u l t i - s t r e a m - i t e m   { 
- 
-         p o s i t i o n :   r e l a t i v e ; 
- 
-         w i d t h :   1 0 0 % ; 
- 
-         h e i g h t :   1 0 0 % ; 
- 
-         b o r d e r - r a d i u s :   1 2 p x ; 
- 
-         o v e r f l o w :   h i d d e n ; 
- 
-         b a c k g r o u n d :   # 0 0 0 ; 
- 
-         b o x - s h a d o w :   0   4 p x   1 5 p x   r g b a ( 0 , 0 , 0 , 0 . 5 ) ; 
- 
-         b o r d e r :   1 p x   s o l i d   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 1 ) ; 
- 
- } 
- 
- 
- 
- . m u l t i - s t r e a m - i t e m   i f r a m e   { 
- 
-         p o s i t i o n :   a b s o l u t e ; 
- 
-         t o p :   0 ; 
- 
-         l e f t :   0 ; 
- 
-         w i d t h :   1 0 0 % ; 
- 
-         h e i g h t :   1 0 0 % ; 
- 
-         b o r d e r :   n o n e ; 
- 
- } 
- 
- 
- 
- / *   M o b i l e :   F o r c e   s t a c k   * / 
- 
- @ m e d i a   ( m a x - w i d t h :   7 6 8 p x )   { 
- 
-         . l i v e - g r i d - c o n t a i n e r   { 
- 
-                 h e i g h t :   a u t o ;   / *   A l l o w   s c r o l l i n g   o n   m o b i l e   * / 
- 
-                 m i n - h e i g h t :   a u t o ; 
- 
-         } 
- 
-         
- 
-         . v i d e o - c o n t a i n e r   { 
- 
-                 g r i d - t e m p l a t e - c o l u m n s :   1 f r   ! i m p o r t a n t ;   / *   F o r c e   s t a c k   * / 
- 
-                 g r i d - t e m p l a t e - r o w s :   a u t o   ! i m p o r t a n t ; 
- 
-                 d i s p l a y :   f l e x ; 
- 
-                 f l e x - d i r e c t i o n :   c o l u m n ; 
- 
-         } 
- 
- 
- 
-         . m u l t i - s t r e a m - i t e m   { 
- 
-                 h e i g h t :   0 ; 
- 
-                 p a d d i n g - b o t t o m :   5 6 . 2 5 % ;   / *   1 6 : 9   A s p e c t   R a t i o   * / 
- 
-         } 
- 
- } 
- 
-/* --- DYNAMIC STREAM DASHBOARD (Final Version) --- */
-.live-grid-container {
+}\n
+/* --- DYNAMIC STREAM DASHBOARD (Separate Windows) --- */
+.stream-dashboard-area {
     width: 100%;
-    margin: 0;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
-#twitch-player-wrapper.video-container {
+#twitch-player-wrapper {
     display: grid !important;
+    /* Grid will automatically put 2 items side-by-side if there is space */
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)) !important;
+    gap: 30px;
     width: 100% !important;
-    max-width: 100% !important; /* Убираем все ограничения по ширине */
-    margin: 0 !important;
-    gap: 20px;
-    grid-template-columns: 1fr; /* По умолчанию во весь экран */
-}
-
-/* Сетка для 2-х стримов: Рядом (как просили) */
-.grid-layout-2 {
-    grid-template-columns: 1fr 1fr !important;
-}
-
-/* Сетка для 3-4 стримов: 2x2 */
-.grid-layout-3, .grid-layout-4 {
-    grid-template-columns: 1fr 1fr !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .multi-stream-item {
     position: relative;
     width: 100%;
+    aspect-ratio: 16 / 9;
     background: #000;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    /* Соотношение сторон 16:9 */
-    aspect-ratio: 16 / 9;
+    transition: all 0.3s ease;
+}
+
+.multi-stream-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 25px 60px rgba(0, 255, 136, 0.2);
 }
 
 .multi-stream-item iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0; width: 100%; height: 100%;
     border: none;
 }
 
-/* Адаптивность для мобильных */
-@media (max-width: 1024px) {
-    .grid-layout-2, .grid-layout-3, .grid-layout-4 {
-        grid-template-columns: 1fr !important; /* На мелких экранах в одну колонку */
+/* Response: Stack on small screens */
+@media (max-width: 1100px) {
+    #twitch-player-wrapper {
+        grid-template-columns: 1fr !important;
     }
 }
