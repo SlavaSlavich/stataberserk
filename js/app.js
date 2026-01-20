@@ -951,51 +951,36 @@ function setupTwitchPlayer(channelName = null) {
     // SUPPORT FOR MULTIPLE CHANNELS (Comma separated)
     const channels = channelName.split(',').map(c => c.trim()).filter(c => c);
 
-    if (channels.length === 1) {
-        // SINGLE PLAYER (Standard)
+    // Unified Render Logic
+    container.innerHTML = '';
+    container.style.display = 'grid'; // Ensure grid display is active (overriding potential none)
+
+    // Remove old inline grid styles to let CSS classes take over
+    container.style.gridTemplateColumns = '';
+    container.style.gridTemplateRows = '';
+    container.style.gap = '';
+    container.style.height = '';
+
+    // Remove any previous grid classes
+    container.classList.remove('grid-layout-1', 'grid-layout-2', 'grid-layout-3', 'grid-layout-4');
+
+    // Add appropriate class based on count
+    if (channels.length === 1) container.classList.add('grid-layout-1');
+    else if (channels.length === 2) container.classList.add('grid-layout-2');
+    else if (channels.length >= 3) container.classList.add('grid-layout-3');
+
+    // Render each channel
+    channels.forEach(ch => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'multi-stream-item';
+
         const iframe = document.createElement('iframe');
-        iframe.src = `https://player.twitch.tv/?channel=${channels[0]}&${parentParams}&muted=false`;
-        iframe.height = "100%";
-        iframe.width = "100%";
+        iframe.src = `https://player.twitch.tv/?channel=${ch}&${parentParams}&muted=false`;
         iframe.allowFullscreen = true;
-        iframe.style.border = "none";
-        container.appendChild(iframe);
-        container.style.display = 'block';
-        container.style.gridTemplateColumns = '1fr'; // Reset grid
-    } else {
-        // MULTI-STREAM GRID
-        container.innerHTML = ''; // Ensure clean
-        container.style.display = 'grid';
-        container.style.gap = '10px';
-        container.style.height = '100%'; // Ensure full height
 
-        // Responsive Grid Config
-        if (channels.length === 2) {
-            container.style.gridTemplateColumns = '1fr 1fr';
-            container.style.gridTemplateRows = '1fr';
-        } else if (channels.length >= 3) {
-            container.style.gridTemplateColumns = '1fr 1fr';
-            container.style.gridTemplateRows = '1fr 1fr';
-        }
-
-        channels.forEach(ch => {
-            const wrapper = document.createElement('div');
-            wrapper.className = 'multi-stream-item';
-            wrapper.style.position = 'relative';
-            wrapper.style.width = '100%';
-            wrapper.style.height = '100%';
-
-            const iframe = document.createElement('iframe');
-            iframe.src = `https://player.twitch.tv/?channel=${ch}&${parentParams}&muted=true`; // Mute multi by default
-            iframe.height = "100%";
-            iframe.width = "100%";
-            iframe.allowFullscreen = true;
-            iframe.style.border = "none";
-
-            wrapper.appendChild(iframe);
-            container.appendChild(wrapper);
-        });
-    }
+        wrapper.appendChild(iframe);
+        container.appendChild(wrapper);
+    });
 }
 
 /* --- RENDER LIVE SECTION (Now just triggers player setup) --- */
