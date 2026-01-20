@@ -1072,5 +1072,11 @@ const TWITCH_CHANNELS = [
         "name": "Mobile Legends",
         "channel": "ecs_tv",
         "icon": "fa-solid fa-mobile-screen"
+    },
+    {
+        "name": "📺 Стримы",
+        "channel": "/start",
+        "category": "Counter Strike 2",
+        "icon": "fa-solid fa-tv"
     }
 ];
