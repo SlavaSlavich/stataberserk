@@ -6,30 +6,12 @@ const LIVE_MATCHES = [
         "team1": "Lancer",
         "team2": "Flux",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "20.01 10:36",
         "odds": {
             "p1": "1.62",
             "x": "3.50",
             "p2": "2.15"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Lancer_vs_Glare",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Lancer",
-        "team2": "Glare",
-        "score": "11-12",
-        "status": "LIVE",
-        "time": "20.01 10:27",
-        "odds": {
-            "p1": "1.78",
-            "x": "3.50",
-            "p2": "1.92"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
@@ -45,9 +27,9 @@ const LIVE_MATCHES = [
         "status": "Coming Soon",
         "time": "20.01 10:45",
         "odds": {
-            "p1": null,
+            "p1": "1.85",
             "x": "3.50",
-            "p2": null
+            "p2": "1.85"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
@@ -56,6 +38,26 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Lancer_vs_Glare_1768894510",
+        "time": "20.01 10:27",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Lancer",
+        "team2": "Glare",
+        "score": "11-12",
+        "winner": "team2",
+        "map_num": 1,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.78",
+            "x": "3.50",
+            "p2": "1.92"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Flux_vs_Glare_1768894086",
         "time": "20.01 10:18",
@@ -1043,86 +1045,6 @@ const MATCH_HISTORY = [
         "team1": "Vortex",
         "team2": "Evoker",
         "score": "13-5",
-        "winner": "team1",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Phantom_vs_Evoker_1768861039",
-        "time": "21.01 01:10",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Phantom",
-        "team2": "Evoker",
-        "score": "12-7",
-        "winner": "team1",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Vortex_vs_Phantom_1768860510",
-        "time": "21.01 01:01",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Vortex",
-        "team2": "Phantom",
-        "score": "8-13",
-        "winner": "team2",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Vortex_vs_Evoker_1768859997",
-        "time": "21.01 00:52",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Vortex",
-        "team2": "Evoker",
-        "score": "6-13",
-        "winner": "team2",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Phantom_vs_Evoker_1768859513",
-        "time": "21.01 00:43",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Phantom",
-        "team2": "Evoker",
-        "score": "13-6",
         "winner": "team1",
         "map_num": 1,
         "map_scores": {},
