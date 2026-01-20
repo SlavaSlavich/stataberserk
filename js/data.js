@@ -1004,11 +1004,6 @@ const MATCH_HISTORY = [
 ];
 const TWITCH_CHANNELS = [
     {
-        "name": "Dota 2",
-        "channel": "berserk_dota2_league",
-        "icon": "fa-brands fa-d-and-d"
-    },
-    {
         "name": "Mobile Legends",
         "channel": "ecs_tv",
         "icon": "fa-solid fa-mobile-screen"
