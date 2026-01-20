@@ -19,24 +19,6 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "FluxGlare6400_vs_FluxGlare",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "FluxGlare6400",
-        "team2": "FluxGlare",
-        "score": "6-4",
-        "status": "LIVE",
-        "time": "П11.38П22.8Ещё+ 137",
-        "odds": {
-            "p1": "1.38",
-            "x": "3.50",
-            "p2": "2.8"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "FluxGlare7500_vs_FluxGlare",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "FluxGlare7500",
@@ -128,6 +110,26 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "FluxGlare6400_vs_FluxGlare_1768904550",
+        "time": "П11.38П22.8Ещё+ 137",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "FluxGlare6400",
+        "team2": "FluxGlare",
+        "score": "6-4",
+        "winner": "team1",
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.38",
+            "x": "3.50",
+            "p2": "2.8"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "FluxGlare4400_vs_FluxGlare_1768904508",
         "time": "П11.92П21.78Ещё+ 161",
@@ -1116,26 +1118,6 @@ const MATCH_HISTORY = [
         "team2": "Raze",
         "score": "10-13",
         "winner": "team2",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Phantom_vs_Havoc_1768866221",
-        "time": "21.01 02:36",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Phantom",
-        "team2": "Havoc",
-        "score": "12-9",
-        "winner": "team1",
         "map_num": 1,
         "map_scores": {},
         "odds": {
