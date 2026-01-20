@@ -7,7 +7,7 @@ const LIVE_MATCHES = [
         "team2": "Raze",
         "score": "9-12",
         "status": "LIVE",
-        "time": "20.01 02:54",
+        "time": "21.01 02:54",
         "odds": {
             "p1": null,
             "x": "3.50",
@@ -58,7 +58,7 @@ const LIVE_MATCHES = [
 const MATCH_HISTORY = [
     {
         "id": "Havoc_vs_Raze_1768866827",
-        "time": "20.01 02:45",
+        "time": "21.01 02:45",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Havoc",
         "team2": "Raze",
@@ -78,7 +78,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Havoc_1768866221",
-        "time": "20.01 02:36",
+        "time": "21.01 02:36",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Havoc",
@@ -98,7 +98,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Raze_1768865698",
-        "time": "20.01 02:27",
+        "time": "21.01 02:27",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Raze",
@@ -118,7 +118,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Havoc_vs_Raze_1768865114",
-        "time": "20.01 02:18",
+        "time": "21.01 02:18",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Havoc",
         "team2": "Raze",
@@ -138,7 +138,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Havoc_1768864584",
-        "time": "20.01 02:09",
+        "time": "21.01 02:09",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Havoc",
@@ -158,7 +158,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Raze_1768864130",
-        "time": "20.01 02:00",
+        "time": "21.01 02:00",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Raze",
@@ -178,7 +178,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768863249",
-        "time": "20.01 01:46",
+        "time": "21.01 01:46",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -198,7 +198,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768862680",
-        "time": "20.01 01:37",
+        "time": "21.01 01:37",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -218,7 +218,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768862165",
-        "time": "20.01 01:28",
+        "time": "21.01 01:28",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -238,7 +238,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768861577",
-        "time": "20.01 01:19",
+        "time": "21.01 01:19",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -258,7 +258,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768861039",
-        "time": "20.01 01:10",
+        "time": "21.01 01:10",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -278,7 +278,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768860510",
-        "time": "20.01 01:01",
+        "time": "21.01 01:01",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -298,7 +298,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768859997",
-        "time": "20.01 00:52",
+        "time": "21.01 00:52",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -318,7 +318,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768859513",
-        "time": "20.01 00:43",
+        "time": "21.01 00:43",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -338,7 +338,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768858883",
-        "time": "20.01 00:34",
+        "time": "21.01 00:34",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -358,7 +358,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768858498",
-        "time": "20.01 00:25",
+        "time": "21.01 00:25",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -378,7 +378,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768858028",
-        "time": "20.01 00:16",
+        "time": "21.01 00:16",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -398,7 +398,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768857323",
-        "time": "20.01 00:07",
+        "time": "21.01 00:07",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -418,7 +418,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768856879",
-        "time": "19.01 23:58",
+        "time": "20.01 23:58",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -438,7 +438,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768856226",
-        "time": "19.01 23:49",
+        "time": "20.01 23:49",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -458,7 +458,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768855683",
-        "time": "19.01 23:40",
+        "time": "20.01 23:40",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -478,7 +478,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768855169",
-        "time": "19.01 23:31",
+        "time": "20.01 23:31",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -498,7 +498,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768853570",
-        "time": "19.01 23:05",
+        "time": "20.01 23:05",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -518,7 +518,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768853067",
-        "time": "19.01 22:56",
+        "time": "20.01 22:56",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -538,7 +538,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768852490",
-        "time": "19.01 22:47",
+        "time": "20.01 22:47",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -558,7 +558,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768852031",
-        "time": "19.01 22:38",
+        "time": "20.01 22:38",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -578,7 +578,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768851396",
-        "time": "19.01 22:29",
+        "time": "20.01 22:29",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -598,7 +598,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768850923",
-        "time": "19.01 22:20",
+        "time": "20.01 22:20",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -618,7 +618,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768850332",
-        "time": "19.01 22:11",
+        "time": "20.01 22:11",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -658,7 +658,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768849208",
-        "time": "19.01 21:53",
+        "time": "20.01 21:53",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -678,7 +678,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768848711",
-        "time": "19.01 21:44",
+        "time": "20.01 21:44",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -698,7 +698,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768848428",
-        "time": "19.01 22:02",
+        "time": "20.01 22:02",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -718,7 +718,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768848218",
-        "time": "19.01 21:35",
+        "time": "20.01 21:35",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -738,7 +738,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768847837",
-        "time": "19.01 21:26",
+        "time": "20.01 21:26",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -778,7 +778,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768846546",
-        "time": "19.01 21:08",
+        "time": "20.01 21:08",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -798,7 +798,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768846065",
-        "time": "19.01 20:59",
+        "time": "20.01 20:59",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -818,7 +818,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768845763",
-        "time": "19.01 21:17",
+        "time": "20.01 21:17",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -838,7 +838,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768845585",
-        "time": "19.01 20:50",
+        "time": "20.01 20:50",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -858,7 +858,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768843809",
-        "time": "19.01 20:24",
+        "time": "20.01 20:24",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -878,7 +878,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768843247",
-        "time": "19.01 20:15",
+        "time": "20.01 20:15",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -898,7 +898,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768842889",
-        "time": "19.01 20:06",
+        "time": "20.01 20:06",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -918,7 +918,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768842281",
-        "time": "19.01 19:57",
+        "time": "20.01 19:57",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -938,7 +938,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768841671",
-        "time": "19.01 19:48",
+        "time": "20.01 19:48",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -958,7 +958,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768841101",
-        "time": "19.01 19:39",
+        "time": "20.01 19:39",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -978,7 +978,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768840673",
-        "time": "19.01 19:30",
+        "time": "20.01 19:30",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -998,7 +998,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768840054",
-        "time": "19.01 19:21",
+        "time": "20.01 19:21",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -1018,7 +1018,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768839525",
-        "time": "19.01 19:12",
+        "time": "20.01 19:12",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -1038,7 +1038,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768838946",
-        "time": "19.01 19:03",
+        "time": "20.01 19:03",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -1058,7 +1058,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Evoker_1768838375",
-        "time": "19.01 18:54",
+        "time": "20.01 18:54",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Evoker",
@@ -1078,7 +1078,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Phantom_vs_Evoker_1768837878",
-        "time": "19.01 18:45",
+        "time": "20.01 18:45",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
         "team2": "Evoker",
@@ -1098,7 +1098,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Vortex_vs_Phantom_1768837288",
-        "time": "19.01 18:36",
+        "time": "20.01 18:36",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Vortex",
         "team2": "Phantom",
@@ -1338,7 +1338,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768822020",
-        "time": "19.01 14:38",
+        "time": "20.01 14:38",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -1358,7 +1358,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768822020",
-        "time": "19.01 14:29",
+        "time": "20.01 14:29",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -1378,7 +1378,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768821995",
-        "time": "19.01 14:20",
+        "time": "20.01 14:20",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -1398,7 +1398,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768821501",
-        "time": "19.01 14:11",
+        "time": "20.01 14:11",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -1418,7 +1418,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768820976",
-        "time": "19.01 14:02",
+        "time": "20.01 14:02",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
@@ -1438,7 +1438,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Flux_1768820398",
-        "time": "19.01 13:53",
+        "time": "20.01 13:53",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Flux",
@@ -1458,7 +1458,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Lancer_vs_Flux_1768819918",
-        "time": "19.01 13:44",
+        "time": "20.01 13:44",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
         "team2": "Flux",
@@ -1478,7 +1478,7 @@ const MATCH_HISTORY = [
     },
     {
         "id": "Glare_vs_Lancer_1768819280",
-        "time": "19.01 13:35",
+        "time": "20.01 13:35",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Glare",
         "team2": "Lancer",
