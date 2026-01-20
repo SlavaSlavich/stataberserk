@@ -919,9 +919,8 @@ function setupTwitchPlayer(channelName = null) {
     // If no channel passed, try to use default or currently stored
     // For now, if null, do nothing or wait for click
     if (!channelName) {
-        // Maybe load default?
-        // Let's load the first one from submenu if logic allows, 
-        // but typically this function is called with a specific channel now.
+        // Force hide if no channel provided
+        container.style.display = 'none';
         return;
     }
 
