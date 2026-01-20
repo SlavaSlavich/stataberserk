@@ -1055,26 +1055,6 @@ const MATCH_HISTORY = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    },
-    {
-        "id": "Phantom_vs_Raze_1768864130",
-        "time": "21.01 02:00",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Phantom",
-        "team2": "Raze",
-        "score": "12-16",
-        "winner": "team2",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
     }
 ];
 const TWITCH_CHANNELS = [
