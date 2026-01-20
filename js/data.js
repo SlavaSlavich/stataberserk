@@ -19,24 +19,6 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "FluxGlare10500_vs_FluxGlare",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "FluxGlare10500",
-        "team2": "FluxGlare",
-        "score": "10-5",
-        "status": "LIVE",
-        "time": "П11.02П210.0Ещё+ 94",
-        "odds": {
-            "p1": "1.02",
-            "x": "3.50",
-            "p2": "10.0"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "FluxGlare12700_vs_FluxGlare",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "FluxGlare12700",
@@ -92,6 +74,26 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "FluxGlare10500_vs_FluxGlare_1768904630",
+        "time": "П11.02П210.0Ещё+ 94",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "FluxGlare10500",
+        "team2": "FluxGlare",
+        "score": "10-5",
+        "winner": "team1",
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.02",
+            "x": "3.50",
+            "p2": "10.0"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "FluxGlare7500_vs_FluxGlare_1768904590",
         "time": "П11.35П22.9Ещё+ 100",
