@@ -1749,36 +1749,48 @@ body {
  
  } 
  
-/* --- STREAM GRID SYSTEM --- */
+/* --- STREAM GRID SYSTEM (V3 - Flex Fix) --- */
 .live-grid-container {
     width: 100%;
-    height: calc(100vh - 140px);
-    min-height: 400px;
+    height: calc(100vh - 160px);
+    min-height: 500px;
     padding: 10px 0;
+    display: flex;
 }
 
 .video-container {
     width: 100%;
     height: 100%;
-    display: grid;
+    display: flex !important; /* Force flex for better height control in 1-2 stream mode */
     gap: 15px;
-    grid-template-columns: 1fr;   
+    align-items: stretch;
 }
 
-.grid-layout-1 { grid-template-columns: 1fr; }
-.grid-layout-2 { grid-template-columns: 1fr 1fr; }
-.grid-layout-3 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
-.grid-layout-4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+.grid-layout-1 .multi-stream-item {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-layout-2 .multi-stream-item {
+    flex: 1;
+    height: 100%;
+    min-width: 0; /* Fix flex shrinking */
+}
+
+/* Fallback to grid for 3+ streams */
+.grid-layout-3, .grid-layout-4 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
 .multi-stream-item {
     position: relative;
-    width: 100%;
-    height: 100%;
     border-radius: 12px;
     overflow: hidden;
     background: #000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
 .multi-stream-item iframe {
@@ -1792,6 +1804,14 @@ body {
 
 @media (max-width: 768px) {
     .live-grid-container { height: auto; min-height: auto; }
-    .video-container { grid-template-columns: 1fr !important; grid-template-rows: auto !important; display: flex; flex-direction: column; }
-    .multi-stream-item { height: 0; padding-bottom: 56.25%; }
+    .video-container { 
+        flex-direction: column !important;
+        display: flex !important;
+    }
+    .multi-stream-item { 
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        min-height: 200px;
+    }
 }
