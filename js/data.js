@@ -1,24 +1,6 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Lancer_vs_Flux",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Lancer",
-        "team2": "Flux",
-        "score": "10-13",
-        "status": "LIVE",
-        "time": "20.01 11:03",
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Lancer_vs_Glare",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Lancer",
@@ -42,7 +24,7 @@ const LIVE_MATCHES = [
         "team1": "Flux",
         "team2": "Glare",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "20.01 11:12",
         "odds": {
             "p1": null,
@@ -56,6 +38,26 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Lancer_vs_Flux_1768896686",
+        "time": "20.01 11:03",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Lancer",
+        "team2": "Flux",
+        "score": "10-13",
+        "winner": "team2",
+        "map_num": 1,
+        "map_scores": {},
+        "odds": {
+            "p1": null,
+            "x": "3.50",
+            "p2": null
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Lancer_vs_Glare_1768896131",
         "time": "20.01 10:54",
@@ -1072,11 +1074,5 @@ const TWITCH_CHANNELS = [
         "name": "Mobile Legends",
         "channel": "ecs_tv",
         "icon": "fa-solid fa-mobile-screen"
-    },
-    {
-        "name": "CS2 Ultras League",
-        "channel": "counter strike 2",
-        "category": "Counter Strike 2",
-        "icon": "fa-solid fa-tv"
     }
 ];
