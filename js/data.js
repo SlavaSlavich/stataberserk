@@ -1,13 +1,16 @@
 
-const LIVE_MATCHES = [
+const LIVE_MATCHES = [];
+const MATCH_HISTORY = [
     {
-        "id": "Flux_vs_Glare",
+        "id": "Flux_vs_Glare_1768897246",
+        "time": "20.01 11:12",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Flux",
         "team2": "Glare",
         "score": "13-8",
-        "status": "LIVE",
-        "time": "20.01 11:12",
+        "winner": "team1",
+        "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": null,
             "x": "3.50",
@@ -17,9 +20,7 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Lancer_vs_Glare_1768897208",
         "time": "20.01 11:21",
