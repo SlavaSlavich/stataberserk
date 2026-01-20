@@ -24,7 +24,7 @@ const LIVE_MATCHES = [
         "team1": "Phantom",
         "team2": "Vortex",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "21.01 00:25",
         "odds": {
             "p1": "1.4",
