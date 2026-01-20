@@ -1,13 +1,16 @@
 
-const LIVE_MATCHES = [
+const LIVE_MATCHES = [];
+const MATCH_HISTORY = [
     {
-        "id": "Havoc_vs_Raze",
+        "id": "Havoc_vs_Raze_1768878601",
+        "time": "20.01 06:02",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Havoc",
         "team2": "Raze",
         "score": "16-14",
-        "status": "LIVE",
-        "time": "20.01 06:02",
+        "winner": "team1",
+        "map_num": 1,
+        "map_scores": {},
         "odds": {
             "p1": "2.7",
             "x": "3.50",
@@ -17,9 +20,7 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
-    }
-];
-const MATCH_HISTORY = [
+    },
     {
         "id": "Havoc_vs_Raze_1768877923",
         "time": "20.01 05:53",
