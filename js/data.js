@@ -1012,5 +1012,11 @@ const TWITCH_CHANNELS = [
         "name": "Mobile Legends",
         "channel": "ecs_tv",
         "icon": "fa-solid fa-mobile-screen"
+    },
+    {
+        "name": "Berserk CS2 League",
+        "channel": "berserk_cs2_league",
+        "category": "Counter Strike 2",
+        "icon": "fa-solid fa-tv"
     }
 ];
