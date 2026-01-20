@@ -45,9 +45,9 @@ const LIVE_MATCHES = [
         "status": "Coming Soon",
         "time": "21.01 03:12",
         "odds": {
-            "p1": "1.5",
+            "p1": "1.48",
             "x": "3.50",
-            "p2": "2.4"
+            "p2": "2.5"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
