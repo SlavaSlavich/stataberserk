@@ -1684,7 +1684,7 @@ const MATCH_HISTORY = [
 const TWITCH_CHANNELS = [
     {
         "name": "Eternity League",
-        "channel": "eternity_league2, eternity_league1, cyberheatmedia",
+        "channel": "eternity_league2, eternity_league1",
         "category": "Counter Strike 2",
         "icon": "fa-solid fa-tv"
     },
