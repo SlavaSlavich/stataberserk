@@ -1690,7 +1690,7 @@ const TWITCH_CHANNELS = [
     },
     {
         "name": "1x1 DOTA2 Berserk League",
-        "channel": "berserk_dota2_league, cyberheatmedia",
+        "channel": "berserk_dota2_league",
         "category": "Dota 2",
         "icon": "fa-solid fa-tv"
     }
