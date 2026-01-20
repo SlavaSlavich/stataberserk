@@ -1,24 +1,6 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "Lancer_vs_Glare",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Lancer",
-        "team2": "Glare",
-        "score": "10-13",
-        "status": "LIVE",
-        "time": "Скоро",
-        "odds": {
-            "p1": "1.9",
-            "x": "3.50",
-            "p2": "1.8"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Phantom_vs_Vortex",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Phantom",
@@ -38,6 +20,26 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "Lancer_vs_Glare_1768920831",
+        "time": "Скоро",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Lancer",
+        "team2": "Glare",
+        "score": "10-13",
+        "winner": "team2",
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.9",
+            "x": "3.50",
+            "p2": "1.8"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "Phantom_vs_Evoker_1768920607",
         "time": "20.01 18:09",
