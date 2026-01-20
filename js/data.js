@@ -89,6 +89,24 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
+    },
+    {
+        "id": "FluxGlare12700_vs_FluxGlare",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "FluxGlare12700",
+        "team2": "FluxGlare",
+        "score": "12-7",
+        "status": "LIVE",
+        "time": "П11.02П210.0Ещё+ 69",
+        "odds": {
+            "p1": "1.02",
+            "x": "3.50",
+            "p2": "10.0"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
     }
 ];
 const MATCH_HISTORY = [
