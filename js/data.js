@@ -35,6 +35,24 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
+    },
+    {
+        "id": "Evoker_vs_Vortex",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Evoker",
+        "team2": "Vortex",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "20.01 22:11",
+        "odds": {
+            "p1": "1.85",
+            "x": "3.50",
+            "p2": "1.85"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
     }
 ];
 const MATCH_HISTORY = [
