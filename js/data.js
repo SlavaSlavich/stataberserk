@@ -23,7 +23,7 @@ const LIVE_MATCHES = [
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Flux",
         "team2": "Glare",
-        "score": "1-3",
+        "score": "2-4",
         "status": "LIVE",
         "time": "20.01 10:45",
         "odds": {
