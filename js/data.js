@@ -1,13 +1,31 @@
 
 const LIVE_MATCHES = [
     {
-        "id": "LancerGlareСегодня в 10:26П11.85П21.85Ещё+ 153_vs_LancerGlareСегодня в 10:26",
+        "id": "Lancer_vs_Flux",
         "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "LancerGlareСегодня в 10:26П11.85П21.85Ещё+ 153",
-        "team2": "LancerGlareСегодня в 10:26",
+        "team1": "Lancer",
+        "team2": "Flux",
         "score": "0-0",
         "status": "Coming Soon",
-        "time": "П11.85П21.85Ещё+ 153",
+        "time": "20.01 13:35",
+        "odds": {
+            "p1": "1.68",
+            "x": "3.50",
+            "p2": "2.05"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Lancer_vs_Glare",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Lancer",
+        "team2": "Glare",
+        "score": "0-0",
+        "status": "LIVE",
+        "time": "Скоро",
         "odds": {
             "p1": "1.85",
             "x": "3.50",
@@ -19,17 +37,17 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "FluxGlare13900_vs_FluxGlare",
+        "id": "LancerGlareСегодня в 10:26П11.85П21.85Ещё+ 153_vs_LancerGlareСегодня в 10:26",
         "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "FluxGlare13900",
-        "team2": "FluxGlare",
-        "score": "13-9",
-        "status": "LIVE",
-        "time": "П11.02П210.0",
+        "team1": "LancerGlareСегодня в 10:26П11.85П21.85Ещё+ 153",
+        "team2": "LancerGlareСегодня в 10:26",
+        "score": "0-0",
+        "status": "Coming Soon",
+        "time": "П11.85П21.85Ещё+ 153",
         "odds": {
-            "p1": "1.02",
+            "p1": "1.85",
             "x": "3.50",
-            "p2": "10.0"
+            "p2": "1.85"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
@@ -56,6 +74,26 @@ const LIVE_MATCHES = [
     }
 ];
 const MATCH_HISTORY = [
+    {
+        "id": "FluxGlare13900_vs_FluxGlare_1768904719",
+        "time": "П11.02П210.0",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "FluxGlare13900",
+        "team2": "FluxGlare",
+        "score": "13-9",
+        "winner": "team1",
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.02",
+            "x": "3.50",
+            "p2": "10.0"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
     {
         "id": "FluxGlare12700_vs_FluxGlare_1768904672",
         "time": "П11.02П210.0Ещё+ 69",
@@ -1043,86 +1081,6 @@ const MATCH_HISTORY = [
         "team1": "Phantom",
         "team2": "Raze",
         "score": "9-13",
-        "winner": "team2",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Raze_1768868414",
-        "time": "20.01 03:12",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Raze",
-        "score": "10-13",
-        "winner": "team2",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Phantom_vs_Havoc_1768867828",
-        "time": "20.01 03:03",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Phantom",
-        "team2": "Havoc",
-        "score": "13-7",
-        "winner": "team1",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Phantom_vs_Raze_1768867305",
-        "time": "21.01 02:54",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Phantom",
-        "team2": "Raze",
-        "score": "9-12",
-        "winner": "team2",
-        "map_num": 1,
-        "map_scores": {},
-        "odds": {
-            "p1": null,
-            "x": "3.50",
-            "p2": null
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Havoc_vs_Raze_1768866827",
-        "time": "21.01 02:45",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Havoc",
-        "team2": "Raze",
-        "score": "10-13",
         "winner": "team2",
         "map_num": 1,
         "map_scores": {},
