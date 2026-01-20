@@ -57,6 +57,26 @@ const LIVE_MATCHES = [
 ];
 const MATCH_HISTORY = [
     {
+        "id": "Phantom_vs_Vortex_1768924984",
+        "time": "20.01 18:54",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Phantom",
+        "team2": "Vortex",
+        "score": "4-13",
+        "winner": "team2",
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.4",
+            "x": "3.50",
+            "p2": "2.7"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
         "id": "Phantom_vs_Evoker_1768922362",
         "time": "Скоро",
         "league": "1x1 Berserk League 2026 Week #4",
