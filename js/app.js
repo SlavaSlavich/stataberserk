@@ -240,7 +240,7 @@ function setupNavigation() {
         Object.keys(groups).forEach(cat => {
             // Header
             const header = document.createElement('li');
-            header.style.cssText = 'padding: 8px 15px; font-size: 11px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px; margin-top: 5px; cursor: default; pointer-events: none;';
+            header.style.cssText = 'padding: 8px 15px; font-size: 11px; color: var(--text-muted); letter-spacing: 1px; margin-top: 5px; cursor: default; pointer-events: none;';
             header.textContent = cat;
             submenu.appendChild(header);
 
