@@ -941,25 +941,62 @@ function setupTwitchPlayer(channelName = null) {
         return;
     }
 
-    // Construct Iframe
+    // Construct Iframe(s)
     const domain = window.location.hostname;
-
-    // We add current domain to parents list automatically to ensure it works wherever deployed
     let parents = ['slavaslavich.github.io', 'localhost', '127.0.0.1'];
     if (!parents.includes(domain) && domain) {
         parents.push(domain);
     }
-
     const parentParams = parents.map(p => `parent=${p}`).join('&');
 
-    const iframe = document.createElement('iframe');
-    iframe.src = `https://player.twitch.tv/?channel=${channelName}&${parentParams}&muted=false`;
-    iframe.height = "100%";
-    iframe.width = "100%";
-    iframe.allowFullscreen = true;
-    iframe.style.border = "none";
+    // SUPPORT FOR MULTIPLE CHANNELS (Comma separated)
+    const channels = channelName.split(',').map(c => c.trim()).filter(c => c);
 
-    container.appendChild(iframe);
+    if (channels.length === 1) {
+        // SINGLE PLAYER (Standard)
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://player.twitch.tv/?channel=${channels[0]}&${parentParams}&muted=false`;
+        iframe.height = "100%";
+        iframe.width = "100%";
+        iframe.allowFullscreen = true;
+        iframe.style.border = "none";
+        container.appendChild(iframe);
+        container.style.display = 'block';
+        container.style.gridTemplateColumns = '1fr'; // Reset grid
+    } else {
+        // MULTI-STREAM GRID
+        container.innerHTML = ''; // Ensure clean
+        container.style.display = 'grid';
+        container.style.gap = '10px';
+        container.style.height = '100%'; // Ensure full height
+
+        // Responsive Grid Config
+        if (channels.length === 2) {
+            container.style.gridTemplateColumns = '1fr 1fr';
+            container.style.gridTemplateRows = '1fr';
+        } else if (channels.length >= 3) {
+            container.style.gridTemplateColumns = '1fr 1fr';
+            container.style.gridTemplateRows = '1fr 1fr';
+        }
+
+        channels.forEach(ch => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'multi-stream-item';
+            wrapper.style.position = 'relative';
+            wrapper.style.width = '100%';
+            wrapper.style.height = '100%';
+
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://player.twitch.tv/?channel=${ch}&${parentParams}&muted=true`; // Mute multi by default
+            iframe.height = "100%";
+            iframe.width = "100%";
+            iframe.allowFullscreen = true;
+            iframe.style.border = "none";
+
+            wrapper.appendChild(iframe);
+            container.appendChild(wrapper);
+        });
+    }
 }
 
 /* --- RENDER LIVE SECTION (Now just triggers player setup) --- */
