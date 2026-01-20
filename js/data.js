@@ -1103,11 +1103,5 @@ const TWITCH_CHANNELS = [
         "channel": "berserk_cs2_league",
         "category": "Counter Strike 2",
         "icon": "fa-solid fa-tv"
-    },
-    {
-        "name": "1x1DOTA2 Berserk League",
-        "channel": "berserk_dota2_league",
-        "category": "Dota 2",
-        "icon": "fa-solid fa-tv"
     }
 ];
