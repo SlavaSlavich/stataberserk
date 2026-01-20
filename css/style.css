@@ -1623,39 +1623,28 @@ body {
     margin-bottom: 0;
     margin-top: 20px;
     opacity: 0.5;
-}\n
-
-/* --- GIANT STREAM GRID (FORCED 2 COLUMNS) --- */
-#view-live.view-section {
-    padding: 10px !important;
+}\n\n
+/* --- ULTIMATE 2-COLUMN DASHBOARD (GRID FIX) --- */
+.stream-dashboard-area, #view-live.view-section {
     width: 100% !important;
     max-width: 100% !important;
-    display: none; /* Default state */
-}
-
-#view-live.view-section.active {
-    display: block !important;
-}
-
-.stream-dashboard-area {
-    width: 100% !important;
+    padding: 10px !important;
     margin: 0 !important;
+    display: block !important;
+    background: transparent !important;
 }
 
 #twitch-player-wrapper {
     display: grid !important;
     width: 100% !important;
+    /* Крупная сетка: 2 колонки, высота по контенту (чтобы 3-й стрим не пропадал) */
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)) !important;
     gap: 20px !important;
-    margin: 10px 0 0 0 !important;
-}
-
-/* Force exactly 2 large columns for multi-stream */
-.grid-layout-2, .grid-layout-3, .grid-layout-4 {
-    grid-template-columns: 1fr 1fr !important;
-}
-
-.grid-layout-1 {
-    grid-template-columns: 1fr !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .multi-stream-item {
@@ -1675,7 +1664,8 @@ body {
     border: none;
 }
 
-@media (max-width: 900px) {
+/* На мобильных - в одну колонку */
+@media (max-width: 1024px) {
     #twitch-player-wrapper {
         grid-template-columns: 1fr !important;
     }
