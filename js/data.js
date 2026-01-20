@@ -23,7 +23,7 @@ const LIVE_MATCHES = [
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Flux",
         "team2": "Glare",
-        "score": "0-0",
+        "score": "1-0",
         "status": "LIVE",
         "time": "20.01 11:12",
         "odds": {
@@ -1074,5 +1074,11 @@ const TWITCH_CHANNELS = [
         "name": "Mobile Legends",
         "channel": "ecs_tv",
         "icon": "fa-solid fa-mobile-screen"
+    },
+    {
+        "name": "CS2 Ultras League",
+        "channel": "eternity_league1",
+        "category": "Counter Strike 2",
+        "icon": "fa-solid fa-tv"
     }
 ];
