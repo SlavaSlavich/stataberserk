@@ -750,7 +750,7 @@ function renderDashboard(data = null) {
     if (allFilteredMatches.length === 0) {
         tbody.innerHTML = `
             <tr>
-                <td colspan="10">
+                <td colspan="12">
                     <div class="empty-state">
                         <img src="img/empty-state-final.png?v=8" alt="No Data">
                         <p>История пуста</p>
@@ -788,12 +788,14 @@ function renderDashboard(data = null) {
         const logo2 = match.logos ? match.logos.t2 : '';
 
         // Determine where to put the score based on map_num
-        let scoreCol1 = '-', scoreCol2 = '-', scoreCol3 = '-';
+        let scoreCol1 = '-', scoreCol2 = '-', scoreCol3 = '-', scoreCol4 = '-', scoreCol5 = '-';
 
         if (match.map_scores) {
             scoreCol1 = match.map_scores.map_1 || '-';
             scoreCol2 = match.map_scores.map_2 || '-';
             scoreCol3 = match.map_scores.map_3 || '-';
+            scoreCol4 = match.map_scores.map_4 || '-';
+            scoreCol5 = match.map_scores.map_5 || '-';
         } else {
             // Fallback for old data or if not present
             const mapNum = match.map_num || 0;
@@ -862,6 +864,8 @@ function renderDashboard(data = null) {
             <td style="text-align: center;">${scoreCol1}</td>
             <td style="text-align: center;">${scoreCol2}</td>
             <td style="text-align: center;">${scoreCol3}</td>
+            <td style="text-align: center;">${scoreCol4}</td>
+            <td style="text-align: center;">${scoreCol5}</td>
         `;
 
         // Add staggered animation delay
