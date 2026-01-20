@@ -1624,39 +1624,49 @@ body {
     margin-top: 20px;
     opacity: 0.5;
 }\n
-/* --- DYNAMIC STREAM DASHBOARD (Separate Windows) --- */
+
+/* --- GIANT STREAM GRID (FORCED 2 COLUMNS) --- */
+#view-live.view-section {
+    padding: 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: none; /* Default state */
+}
+
+#view-live.view-section.active {
+    display: block !important;
+}
+
 .stream-dashboard-area {
-    width: 100%;
-    padding: 10px 0;
+    width: 100% !important;
+    margin: 0 !important;
 }
 
 #twitch-player-wrapper {
     display: grid !important;
-    /* Grid will automatically put 2 items side-by-side if there is space */
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)) !important;
-    gap: 30px;
     width: 100% !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+    gap: 20px !important;
+    margin: 10px 0 0 0 !important;
+}
+
+/* Force exactly 2 large columns for multi-stream */
+.grid-layout-2, .grid-layout-3, .grid-layout-4 {
+    grid-template-columns: 1fr 1fr !important;
+}
+
+.grid-layout-1 {
+    grid-template-columns: 1fr !important;
 }
 
 .multi-stream-item {
     position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
     background: #000;
-    border-radius: 16px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-}
-
-.multi-stream-item:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-5px);
-    box-shadow: 0 25px 60px rgba(0, 255, 136, 0.2);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .multi-stream-item iframe {
@@ -1665,8 +1675,7 @@ body {
     border: none;
 }
 
-/* Response: Stack on small screens */
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
     #twitch-player-wrapper {
         grid-template-columns: 1fr !important;
     }
