@@ -35,15 +35,39 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
+    }
+];
+const MATCH_HISTORY = [
+    {
+        "id": "LancerFluxСегодня в 10:35П11.68П22.05Ещё+ 151_vs_LancerFluxСегодня в 10:35_1768904772",
+        "time": "П11.68П22.05Ещё+ 151",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "LancerFluxСегодня в 10:35П11.68П22.05Ещё+ 151",
+        "team2": "LancerFluxСегодня в 10:35",
+        "score": null,
+        "winner": null,
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.68",
+            "x": "3.50",
+            "p2": "2.05"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
     },
     {
-        "id": "LancerGlareСегодня в 10:26П11.85П21.85Ещё+ 153_vs_LancerGlareСегодня в 10:26",
+        "id": "LancerGlareСегодня в 10:26П11.85П21.85Ещё+ 153_vs_LancerGlareСегодня в 10:26_1768904772",
+        "time": "П11.85П21.85Ещё+ 153",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "LancerGlareСегодня в 10:26П11.85П21.85Ещё+ 153",
         "team2": "LancerGlareСегодня в 10:26",
-        "score": "0-0",
-        "status": "Coming Soon",
-        "time": "П11.85П21.85Ещё+ 153",
+        "score": null,
+        "winner": null,
+        "map_num": null,
+        "map_scores": {},
         "odds": {
             "p1": "1.85",
             "x": "3.50",
@@ -54,26 +78,6 @@ const LIVE_MATCHES = [
             "t2": "img/cs2_logo.svg"
         }
     },
-    {
-        "id": "LancerFluxСегодня в 10:35П11.68П22.05Ещё+ 151_vs_LancerFluxСегодня в 10:35",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "LancerFluxСегодня в 10:35П11.68П22.05Ещё+ 151",
-        "team2": "LancerFluxСегодня в 10:35",
-        "score": "0-0",
-        "status": "Coming Soon",
-        "time": "П11.68П22.05Ещё+ 151",
-        "odds": {
-            "p1": "1.68",
-            "x": "3.50",
-            "p2": "2.05"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    }
-];
-const MATCH_HISTORY = [
     {
         "id": "FluxGlare13900_vs_FluxGlare_1768904719",
         "time": "П11.02П210.0",
