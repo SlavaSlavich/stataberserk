@@ -42,7 +42,7 @@ const LIVE_MATCHES = [
         "team1": "Evoker",
         "team2": "Vortex",
         "score": "0-0",
-        "status": "Coming Soon",
+        "status": "LIVE",
         "time": "20.01 21:17",
         "odds": {
             "p1": "1.85",
