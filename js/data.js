@@ -5,7 +5,7 @@ const LIVE_MATCHES = [
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Ignis",
         "team2": "Havoc",
-        "score": "7-2",
+        "score": "9-3",
         "status": "LIVE",
         "time": "21.01 05:53",
         "odds": {
@@ -30,24 +30,6 @@ const LIVE_MATCHES = [
             "p1": "2.4",
             "x": "3.50",
             "p2": "1.5"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
-        "id": "Raze_vs_Havoc",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Raze",
-        "team2": "Havoc",
-        "score": "0-0",
-        "status": "Coming Soon",
-        "time": "21.01 06:11",
-        "odds": {
-            "p1": "1.48",
-            "x": "3.50",
-            "p2": "2.5"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
@@ -2424,6 +2406,26 @@ const MATCH_HISTORY = [
         "team2": "Havoc",
         "score": "13-6",
         "winner": "team1",
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "1.48",
+            "x": "3.50",
+            "p2": "2.5"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Raze_vs_Havoc_1768964107",
+        "time": "21.01 06:11",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Raze",
+        "team2": "Havoc",
+        "score": null,
+        "winner": null,
         "map_num": null,
         "map_scores": {},
         "odds": {
