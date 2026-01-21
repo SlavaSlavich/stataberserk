@@ -19,24 +19,6 @@ const LIVE_MATCHES = [
         }
     },
     {
-        "id": "Ignis_vs_Raze",
-        "league": "1x1 Berserk League 2026 Week #4",
-        "team1": "Ignis",
-        "team2": "Raze",
-        "score": "4-13",
-        "status": "LIVE",
-        "time": "21.01 07:40",
-        "odds": {
-            "p1": "2.5",
-            "x": "3.50",
-            "p2": "1.48"
-        },
-        "logos": {
-            "t1": "img/cs2_logo.svg",
-            "t2": "img/cs2_logo.svg"
-        }
-    },
-    {
         "id": "Raze_vs_Havoc",
         "league": "1x1 Berserk League 2026 Week #4",
         "team1": "Raze",
@@ -2630,6 +2612,26 @@ const MATCH_HISTORY = [
             "p1": "2.0",
             "x": "3.50",
             "p2": "1.72"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
+    },
+    {
+        "id": "Ignis_vs_Raze_1768970855",
+        "time": "21.01 07:40",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Ignis",
+        "team2": "Raze",
+        "score": "4-13",
+        "winner": "team2",
+        "map_num": null,
+        "map_scores": {},
+        "odds": {
+            "p1": "2.5",
+            "x": "3.50",
+            "p2": "1.48"
         },
         "logos": {
             "t1": "img/cs2_logo.svg",
