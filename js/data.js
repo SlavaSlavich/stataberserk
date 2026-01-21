@@ -17,6 +17,24 @@ const LIVE_MATCHES = [
             "t1": "img/cs2_logo.svg",
             "t2": "img/cs2_logo.svg"
         }
+    },
+    {
+        "id": "Glare_vs_Myst",
+        "league": "1x1 Berserk League 2026 Week #4",
+        "team1": "Glare",
+        "team2": "Myst",
+        "score": "0-0",
+        "status": "LIVE",
+        "time": "Скоро",
+        "odds": {
+            "p1": "2.1",
+            "x": "3.50",
+            "p2": "1.65"
+        },
+        "logos": {
+            "t1": "img/cs2_logo.svg",
+            "t2": "img/cs2_logo.svg"
+        }
     }
 ];
 const MATCH_HISTORY = [
