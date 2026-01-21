@@ -25,7 +25,7 @@ const LIVE_MATCHES = [
         "team2": "Raze",
         "score": "0-0",
         "status": "Coming Soon",
-        "time": "22.01 03:03",
+        "time": "21.01 03:03",
         "odds": {
             "p1": "2.4",
             "x": "3.50",
@@ -43,7 +43,7 @@ const LIVE_MATCHES = [
         "team2": "Havoc",
         "score": "0-0",
         "status": "Coming Soon",
-        "time": "22.01 03:12",
+        "time": "21.01 03:12",
         "odds": {
             "p1": "1.48",
             "x": "3.50",
