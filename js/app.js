@@ -56,20 +56,99 @@ const VERSIONS_DATA = [
     }
 ];
 
+// Глобальные переменные данных
+let LIVE_MATCHES = [];
+let UPCOMING_MATCHES = [];
+let MATCH_HISTORY = [];
+
 function initApp() {
-    checkAuth(); // AUTH CHECK: Must be first
+    checkAuth(); // ПРОВЕРКА АВТОРИЗАЦИИ
     updateClock();
     setInterval(updateClock, 1000);
 
     setupNavigation();
     setupMobileToggle();
-    setupFilters(); // New Table Filter Logic
-    setupUpdatesModal(); // CHANGELOG logic
-    // setupSidebarLeague(); // Removed as per user request
+    setupUpdatesModal();
 
-    // Default render
-    renderDashboard();
-    renderLiveSection();
+    // Загрузка данных с бэкенда
+    fetchMatches();
+
+    // Обновление данных каждые 30 секунд
+    setInterval(fetchMatches, 30000);
+}
+
+async function fetchMatches() {
+    try {
+        // В продакшене URL может отличаться, здесь предполагаем локальный или прокси
+        // Для VDS используем прямой IP адрес API
+        const API_URL = 'http://81.94.159.142:8000/api/matches';
+
+        const response = await fetch(API_URL);
+        if (!response.ok) throw new Error('Ошибка сети');
+
+        const data = await response.json();
+
+        // Распределяем данные
+        // Бэкенд возвращает плоский список, нужно отфильтровать
+        // В идеале API должно возвращать структуру, но пока фильтруем на клиенте
+
+        // Очистка перед обновлением
+        LIVE_MATCHES = [];
+        UPCOMING_MATCHES = [];
+        MATCH_HISTORY = [];
+
+        // Адаптация формата
+        data.forEach(match => {
+            // 1. Форматирование даты: ISO -> "DD-MM-YYYY HH:MM"
+            let timeStr = "";
+            // Бэкенд возвращает match_time (datetime), API может вернуть строку
+            let isoDate = match.match_time || match.time;
+            if (isoDate) {
+                const date = new Date(isoDate);
+                const day = String(date.getDate()).padStart(2, '0');
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const year = date.getFullYear();
+                const hours = String(date.getHours()).padStart(2, '0');
+                const minutes = String(date.getMinutes()).padStart(2, '0');
+                timeStr = `${day}-${month}-${year} ${hours}:${minutes}`;
+            }
+
+            // 2. Создаем объект, совместимый со старым кодом
+            const normalizedMatch = {
+                ...match,
+                time: timeStr, // Старый код ищет .time для отображения
+                match_time: isoDate, // Сохраняем оригинал для сортировки
+                odds: { // Старый код ищет .odds.p1
+                    p1: match.odds_p1,
+                    p2: match.odds_p2
+                },
+                // Если скрапер не вернул логотипы, ставим заглушки
+                logos: match.logos || { t1: "", t2: "" }
+            };
+
+            if (normalizedMatch.status === 'LIVE') {
+                LIVE_MATCHES.push(normalizedMatch);
+            } else if (normalizedMatch.status === 'UPCOMING') {
+                UPCOMING_MATCHES.push(normalizedMatch);
+            } else if (normalizedMatch.status === 'FINISHED') {
+                MATCH_HISTORY.push(normalizedMatch);
+            }
+        });
+
+        // Сортировка истории (новые сверху)
+        MATCH_HISTORY.sort((a, b) => new Date(b.match_time) - new Date(a.match_time));
+
+        // Обновляем UI
+        renderDashboard();
+        renderLiveSection();
+        setupFilters(); // Переинициализация фильтров с новыми данными
+
+    } catch (error) {
+        console.error("Ошибка загрузки данных:", error);
+        // Fallback если API недоступен (можно оставить пустым или показать ошибку)
+        // document.getElementById('connection-status').textContent = "Ошибка подключения";
+        // document.getElementById('connection-status').style.color = "red";
+    }
 }
 
 function setupUpdatesModal() {
@@ -570,7 +649,22 @@ function toggleFilterDropdown(btn, col) {
     }
 
     // STANDARD DROPDOWN (List of values)
-    const safeHistory = (typeof MATCH_HISTORY !== 'undefined') ? MATCH_HISTORY : [];
+    const upcoming = (typeof UPCOMING_MATCHES !== 'undefined') ? UPCOMING_MATCHES : [];
+    const history = (typeof MATCH_HISTORY !== 'undefined') ? MATCH_HISTORY : [];
+
+    // Combine and Sort DESC (Newest First)
+    let safeHistory = [...upcoming, ...history];
+
+    safeHistory.sort((a, b) => {
+        // Parse "DD-MM-YYYY HH:MM"
+        const parseDate = (str) => {
+            const [datePart, timePart] = str.split(' ');
+            const [day, month, year] = datePart.split('-');
+            const [hour, minute] = timePart.split(':');
+            return new Date(year, month - 1, day, hour, minute);
+        };
+        return parseDate(b.time) - parseDate(a.time);
+    });
     const valuesRaw = safeHistory.map(m => {
         const val = getNestedValue(m, col);
         // Normalize if it's the league column
@@ -669,7 +763,20 @@ function closeAllDropdowns() {
 }
 
 function applyFilters() {
-    const safeHistory = (typeof MATCH_HISTORY !== 'undefined') ? MATCH_HISTORY : [];
+    const upcoming = (typeof UPCOMING_MATCHES !== 'undefined') ? UPCOMING_MATCHES : [];
+    const history = (typeof MATCH_HISTORY !== 'undefined') ? MATCH_HISTORY : [];
+
+    let safeHistory = [...upcoming, ...history];
+    // Sort DESC
+    safeHistory.sort((a, b) => {
+        const parseDate = (str) => {
+            const [datePart, timePart] = str.split(' ');
+            const [day, month, year] = datePart.split('-');
+            const [hour, minute] = timePart.split(':');
+            return new Date(year, month - 1, day, hour, minute);
+        };
+        return parseDate(b.time) - parseDate(a.time);
+    });
 
     const filtered = safeHistory.filter(match => {
         // Check all active filters
@@ -756,7 +863,25 @@ function renderDashboard(data = null) {
     if (!tbody) return;
 
     // Use passed data or default global history
-    const safeHistory = data || ((typeof MATCH_HISTORY !== 'undefined') ? MATCH_HISTORY : []);
+    let safeHistory = data;
+
+    if (!data || data === 'APPEND') {
+        // Используем глобальную переменную, которая теперь наполняется через API
+        const history = MATCH_HISTORY;
+
+        // ONLY HISTORY for Main Page
+        if (!data) {
+            safeHistory = [...history];
+            // Сортировка уже сделана в fetchMatches, но можно оставить для надежности
+            safeHistory.sort((a, b) => {
+                // Обработка даты из MySQL (может быть строкой ISO или DD-MM-YYYY)
+                // Наш API возвращает дату как есть.
+                // Если формат отличается, нужна конвертация. 
+                // Пока предполагаем, что сервер возвращает сортированный список или валидную дату.
+                return new Date(b.match_time || b.time) - new Date(a.match_time || a.time);
+            });
+        }
+    }
 
     // Reset if it's a new dataset call (not a "Load More" action)
     if (data !== 'APPEND') {
@@ -772,7 +897,7 @@ function renderDashboard(data = null) {
                 <td colspan="12">
                     <div class="empty-state">
                         <img src="img/empty-state-final.png?v=8" alt="No Data">
-                        <p>История пуста</p>
+                        <p>Нет матчей</p>
                     </div>
                 </td>
             </tr>
